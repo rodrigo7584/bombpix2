@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box !important;
+}
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box !important;
+}
+@font-face {
+  font-family: 'crang';
+  src: url('../fonts/Crang.ttf');
+}
+@font-face {
+  font-family: 'cabinet-bold';
+  src: url('../fonts/CabinetGrotesk-Bold.otf');
+}
+@font-face {
+  font-family: 'cabinet-regular';
+  src: url('../fonts/CabinetGrotesk-Regular.otf');
+}
+/*
+#f3dfc3
+#c7653d
+#6c3a48
+#500600
+#2f85ff
+#cee2ff
+#ffd700
+#ff7000
+#009827
+#974024 
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 400px) {
+}
+*/
+
+/*LOADER*/
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.loader-wrapper img {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*FIM LOADER*/
+
+/*DIALOG MODAL*/
+dialog.dialog-modal {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: none;
+  filter: var(--shadow);
+  opacity: 0;
+  overflow: visible;
+  width: 75rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1000;
+}
+dialog.dialog-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+dialog.dialog-modal .dialog-close {
+  content: '';
+  background-color: var(--verde-escuro);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+dialog.dialog-modal .dialog-close::before {
+  content: 'X';
+  text-transform: uppercase;
+  font-family: var(--font-got);
+  font-size: 1.5rem;
+  color: var(--branco);
+}
+dialog.dialog-modal .dialog-close:hover {
+  cursor: pointer;
+}
+dialog.dialog-modal .container-char {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 75vh;
+}
+.fade-in {
+  animation: fade-in 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.fade-out {
+  animation: fade-out 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*END DIALOG MODAL*/
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 400px) {
+}
