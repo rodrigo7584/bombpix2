@@ -151,6 +151,34 @@ dialog.dialog-modal .container-char {
   }
 }
 /*END DIALOG MODAL*/
+/*BTNS*/
+.btn {
+  font-family: 'crang', sans-serif;
+  color: #500600;
+  background: url(../img/btn-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+  transform: scale(0.97);
+}
+.btn:active {
+  filter: brightness(0.93);
+  transform: scale(0.95);
+}
+/*END BTNS*/
+/*TEXTS*/
+
+/*END TEXTS*/
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
