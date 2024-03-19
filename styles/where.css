@@ -1,0 +1,14 @@
+.where {
+  z-index: 10;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('../img/bg-where.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 10rem 0 5rem 0;
+}
+.where .bg-element {
+  position: absolute;
+  width: 100%;
+  top: -3rem;
+}
