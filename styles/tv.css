@@ -1,0 +1,61 @@
+.tv{
+  overflow-x: hidden;
+  padding: 10rem 0 5rem 0;
+  background-image: url('../img/bg-wood.png');
+  background-size: auto 100%;
+  position: relative;
+}
+.tv .stickers {
+  position: absolute;
+  right: 1rem;
+  top: 7rem;
+  width: 28rem;
+}
+.tv .bush {
+  position: absolute;
+  width: 17rem;
+  right: -7rem;
+  bottom: 4rem;
+  animation: rotate 2s linear infinite;
+}
+.tv .row{
+  display: flex;
+  justify-content: center;
+}
+.tv .composition{
+  position: relative;
+  width: 80rem;
+}
+.tv .composition .image-tv{
+  width: 100%;
+  position: relative;
+  z-index: 7;
+}
+.tv .composition .tv-lines{
+  position: absolute;
+  left: 6%;
+  top: 1%;
+  z-index: 6;
+  width: 75%;
+  height: 73%;
+  animation: tvLines 0.8s linear infinite ;
+}
+.tv .composition video {
+  position: absolute;
+  width: 71%;
+  top: 5%;
+  height: 73%;
+  object-fit: fill;
+  left: 6%;
+}
+@keyframes tvLines {
+  0%{
+    top: 1%;
+  }
+  50%{
+    top: 7%;
+  }
+  100%{
+    top: 1%;
+  }
+}

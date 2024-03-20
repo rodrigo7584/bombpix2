@@ -1,0 +1,65 @@
+.bombers .swiper-bombers {
+  display: grid;
+  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
+  align-items: center;
+}
+.bombers .swiper-bombers .swiper {
+  width: 100%;
+}
+.bombers .swiper-bombers .swiper-conteudo {
+  border-radius: 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rem solid var(--preto-transparente);
+}
+.bombers .swiper-bombers .button-prev img {
+  transform: rotate(180deg);
+  animation: buttonPrev 1s ease-in-out infinite;
+}
+.bombers .swiper-bombers .button-next img {
+  animation: buttonNext 1s ease-in-out infinite;
+}
+
+.bombers .swiper-bombers .button-next img,
+.bombers .swiper-bombers .button-prev img {
+  width: 6rem;
+  margin: 0.5rem;
+}
+.bombers .swiper-bombers .button-next:hover,
+.bombers .swiper-bombers .button-prev:hover {
+  cursor: pointer;
+}
+.bombers .swiper-bombers .swiper-slide img,
+.bombers .swiper-bombers .swiper-slide video {
+  max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .bombers .conteudo {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .bombers {
+    background-size: 38%, 35%, 29%, 30%, 100% 100%;
+  }
+  .bombers .swiper-bombers {
+    grid-template-columns: 4rem calc(100% - 8rem) 4rem;
+  }
+  .bombers .swiper-bombers .button-next img,
+  .bombers .swiper-bombers .button-prev img {
+    width: 3rem;
+  }
+}
+
+
+
+.bombers .swiper-teste {
+  display: grid;
+  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
+  align-items: center;
+}
+.bombers .swiper-teste .swiper {
+  width: 100%;
+}

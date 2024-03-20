@@ -2,9 +2,12 @@
 @import url('./fonts.css');
 @import url('./container.css');
 @import url('./global.css');
+@import url('./animations.css');
 
 @import url('./header.css');
 @import url('./footer.css');
 
 @import url('./hero.css');
 @import url('./where.css');
+@import url('./bombers.css');
+@import url('./tv.css');
