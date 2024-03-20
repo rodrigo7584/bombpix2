@@ -204,7 +204,7 @@ dialog.dialog-modal .container-char {
   -webkit-text-stroke-color: #000;
 }
 /*END TEXTS*/
-.division-grass{
+.division-grass {
   position: relative;
   z-index: 11;
   width: 100%;
@@ -216,7 +216,7 @@ dialog.dialog-modal .container-char {
   z-index: 12;
   width: 24rem;
   -webkit-animation: vibrate-2 0.3s linear infinite both;
-	animation: vibrate-2 0.3s linear infinite both;
+  animation: vibrate-2 0.3s linear infinite both;
 }
 .division-grass .grass {
   position: absolute;
@@ -225,27 +225,33 @@ dialog.dialog-modal .container-char {
   height: 10rem;
   margin: -5rem 0;
 }
-.division-wood-2{
+.division-wood-2 {
   position: relative;
   z-index: 11;
   width: 100%;
 }
-.division-wood-2 .bush{
+.division-wood-2 .bush {
   position: absolute;
   width: 17rem;
   left: -7rem;
   top: -12rem;
   animation: rotate 2s linear infinite;
 }
-.division-wood-2 .wood{
+.division-wood-2 .wood {
   width: 100%;
   height: 5rem;
   margin: -2.5rem 0;
 }
-.division-wood-3 .wood{
+.division-wood-3 .wood {
   width: 100%;
   height: 5rem;
   margin: -2.5rem 0;
+}
+.teste {
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1400px) {
 }
