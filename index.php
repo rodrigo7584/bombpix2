@@ -1,6 +1,6 @@
 <?php include 'header.php'?>
 <main>
-  <section class="hero">
+  <!-- <section class="hero">
     <img src="./img/cloud.png" class="cloud-1 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-2 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-3 bg-element" alt="" />
@@ -82,49 +82,67 @@
   </section>
   <div class="division-wood-3">
     <img src="./img/wood.png" alt="" class="wood" />
-  </div>
+  </div> -->
   <?php 
     $modes = [
       'farm'=>[
         'modeTitle'=>'modo farm',
+        'mainTitle'=>'riqueza explosiva',
+        'thumb'=>'farm',
         'title'=>'Riqueza Explosiva: Enriqueça com Explosões!',
         'text'=>'Embarque numa experiência única! 
           Cada bomba detonada no modo "Riqueza Explosiva" não apenas
           destrói blocos, mas também desencadeia uma chuva de lucros. 
           Entre na arena, posicione estrategicamente suas bombas e 
           torne-se o magnata da explosão!',
-        'list'=>'Adicione até 20 personagens por mapa para otimizar seus ganhos.
-          <br>
+        'list'=>'
+          <li>
+          Adicione até 20 personagens por mapa para otimizar seus ganhos.
+          </li>
+          <li>
           Bombardeio lucrativo: cada bloco explodido libera moedas e recursos valiosos.
           faça chover dinheiro enquanto cria o caos na arena!
-          <br>
+          </li>
+          <li>
           Explosão estratégica: planeje sua abordagem para maximizar ganhos. aumente o 
           acúmulo de riquezas ao adicionar mais personagens ao campo de batalha.
-          <br>
+          </li>
+          <li>
           Recolha recompensas após o farm (1 hora) e desbloqueie um novo mapa, podendo 
-          explodir até 2 mapas diariamente (intervalo de 11 horas).',
+          explodir até 2 mapas diariamente (intervalo de 11 horas).
+          </li>',
       ],
       'pvp'=>[
         'modeTitle'=>'modo pvp',
+        'mainTitle'=>'batalha épica',
+        'thumb'=>'pvp',
         'title'=>'Explosão Royale: sobreviva e prospere na arena explosiva!',
         'text'=>'Embarque numa experiência única! Cada bomba detonada no modo 
           "Riqueza Explosiva" não apenas destrói blocos, mas também desencadeia
           uma chuva de lucros. Entre na arena, posicione estrategicamente suas 
           bombas e torne-se o magnata da explosão!',
-        'list'=>'Batalha Explosiva: enfrente jogadores de todo o mundo em uma
+        'list'=>'
+          <li>
+          Batalha Explosiva: enfrente jogadores de todo o mundo em uma
           arena cheia de blocos e perigos explosivos. As bombas estão voando, e
           apenas o mais astuto sobreviverá.
-          <br>
+          </li>
+          <li>
           Lucro Compartilhado: cada explosão gera lucros compartilhados entre os 
           jogadores sobreviventes. Quanto mais jogadores você eliminar, mais 
           riquezas você acumula!
-          <br>
+          </li>
+          <li>
           Lucros e taxas: 80% do prêmio será destinado ao ganhador da partida, 
           enquanto os 20% restantes compreendem a taxa de arena. Destes, 10% são 
           designados para a distribuição até o quinto nível de afiliado do 
-          usuário vencedor.',
+          usuário vencedor.
+          </li>',
       ],
       'adventure'=>[
+        'modeTitle'=>'modo aventura',
+        'mainTitle'=>'explosão royale',
+        'thumb'=>'adventure',
         'title'=>'Enfrente um espetáculo de explosões contra desafios gigantes!',
         'text'=>'Prepare-se para uma experiência explosiva totalmente nova! Aqui, 
           a ação está além dos blocos - é hora de enfrentar inimigos, lançar bombas 
@@ -133,22 +151,26 @@
           <br><br>
           * Cada usuário terá um mapa de níveis no qual poderá efetuar diariamente 
           batalhas com recolhimento de recompensas.',
-        'list'=>'Desafios dinâmicos: embarque em uma jornada cheia de desafios dinâmicos,
+        'list'=>'
+          <li>
+          Desafios dinâmicos: embarque em uma jornada cheia de desafios dinâmicos,
           onde cada passo o aproxima de novos inimigos e obstáculos. Lute contra hordas
           de adversários e mostre suas habilidades ao desviar de armadilhas astutas 
           enquanto avança pelos níveis. Cada confronto é uma oportunidade para 
           aprimorar suas táticas explosivas!
-          <br>
+          </li>
+          <li>
           Inimigos lendários: dos astutos espadachins aos feiticeiros ardilosos, cada 
           nível apresenta inimigos formidáveis prontos para testar suas habilidades. 
           Estrategize e aprimore suas técnicas para superar desafios únicos em cada cenário.
-          <br>
+          </li>
+          <li>
           Chefões épicos: a verdadeira emoção começa quando você se depara com os chefões
           épicos! Esses titãs impressionantes estão prontos para desafiar até mesmo os 
           jogadores mais habilidosos. Descubra suas fraquezas, desenvolva estratégias 
           épicas e prepare-se para enfrentar um espetáculo de explosões contra esses 
           desafios gigantes!
-        '
+          </li>'
       ]
     ]
   ?>
@@ -162,9 +184,55 @@
       <div class="row">
         <div class="col">
           <h2 class="text-gradient">modos</h2>
+          <div class="scrolls">
+            <?php foreach($modes as $modes){?>
+            <div class="box-scroll">
+              <div class="scroll">
+                <img src="./img/mode-<?php echo $modes['thumb'];?>.png" alt="" class="thumb">
+                <h3 class="text-gradient">
+                  <?php echo $modes['mainTitle'];?>
+                </h3>
+              </div>
+              <button class="btn" data-button-modal="modal-char-<?php echo $modes['thumb'];?>">
+                <?php echo $modes['thumb'];?>
+              </button>
+              <dialog class="dialog-modal" data-dialog-modal="modal-char-<?php echo $modes['thumb'];?>">
+                <div class="dialog-content">
+                  <div class="main-title">
+                    <h4 class="text-gradient">
+                      <?php echo $modes['modeTitle'];?>
+                    </h4>
+                  </div>
+                  <div class="char-container">
+                    <div class="char-content">
+                      <h5 class="text-gradient">
+                        <?php echo $modes['title'];?>
+                      </h5>
+                      <p class="text-bold">
+                        <?php echo $modes['text'];?>
+                      </p>
+                    </div>
+                    <div class="char-content">
+                      <h6 class="text-gradient">
+                        Intruções
+                      </h6>
+                      <ul class="coin-list">
+                        <?php echo $modes['list'];?>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="dialog-close" data-dialog-modal="modal-close">
+                    <img src="./img/btn-close.svg" alt="">
+                  </button>
+                </div>
+              </dialog>
+            </div>
+            <?php };?>
+          </div>
         </div>
       </div>
     </div>
+ 
   </section>
   <div class="teste">
     <?php

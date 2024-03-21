@@ -81,10 +81,9 @@
 
 /*DIALOG MODAL*/
 dialog.dialog-modal {
-  padding: 2rem;
-  border-radius: 2rem;
+  padding: 4rem;
+  border-radius:3rem;
   border: none;
-  filter: var(--shadow);
   opacity: 0;
   overflow: visible;
   width: 75rem;
@@ -93,36 +92,14 @@ dialog.dialog-modal {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1000;
 }
+dialog.dialog-modal .dialog-content{
+  position: relative;
+}
 dialog.dialog-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
-dialog.dialog-modal .dialog-close {
-  content: '';
-  background-color: var(--verde-escuro);
-  border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: -0.5rem;
-  top: -0.5rem;
-}
-dialog.dialog-modal .dialog-close::before {
-  content: 'X';
-  text-transform: uppercase;
-  font-family: var(--font-got);
-  font-size: 1.5rem;
-  color: var(--branco);
-}
 dialog.dialog-modal .dialog-close:hover {
   cursor: pointer;
-}
-dialog.dialog-modal .container-char {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  max-height: 75vh;
 }
 .fade-in {
   animation: fade-in 0.3s linear;
@@ -131,24 +108,6 @@ dialog.dialog-modal .container-char {
 .fade-out {
   animation: fade-out 0.3s linear;
   animation-fill-mode: forwards;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 /*END DIALOG MODAL*/
 /*BTNS*/
@@ -184,6 +143,10 @@ dialog.dialog-modal .container-char {
 }
 .text-normal {
   font-family: 'cabinet-regular', sans-serif;
+  line-height: 1.3;
+}
+.text-bold {
+  font-family: 'cabinet-bold', sans-serif;
   line-height: 1.3;
 }
 .text-gradient {
@@ -227,7 +190,7 @@ dialog.dialog-modal .container-char {
 }
 .division-wood-2 {
   position: relative;
-  z-index: 11;
+  z-index: 11; 
   width: 100%;
 }
 .division-wood-2 .bush {
@@ -247,12 +210,7 @@ dialog.dialog-modal .container-char {
   height: 5rem;
   margin: -2.5rem 0;
 }
-.teste {
-  height: 150vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
