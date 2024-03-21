@@ -1,6 +1,7 @@
 <?php include 'header.php'?>
 <main>
-  <!-- <section class="hero">
+  <!-- 
+  <section class="hero">
     <img src="./img/cloud.png" class="cloud-1 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-2 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-3 bg-element" alt="" />
@@ -82,7 +83,7 @@
   </section>
   <div class="division-wood-3">
     <img src="./img/wood.png" alt="" class="wood" />
-  </div> -->
+  </div> 
   <?php 
     $modes = [
       'farm'=>[
@@ -232,7 +233,59 @@
         </div>
       </div>
     </div>
+  </section> 
  
+  -->
+  <div class="division-grass-2">
+    <img src="./img/grass.png" alt="" class="grass" />
+  </div>
+  <section class="marketplace">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-gradient">marketplace</h2>
+          <div class="swiper-chests swiper-bombpix">
+            <div class="button-prev">
+              <img src="./img/btn-arrow.svg" alt="" />
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-conteudo">
+                    <h3 class="light-green">Baú ultra comum</h3>
+                    <img src="./img/chest-light-green.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-conteudo">
+                    <h3 class="green">Baú comum</h3>
+                    <img src="./img/chest-green.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-conteudo">
+                    <h3 class="blue">Baú raro</h3>
+                    <img src="./img/chest-blue.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-conteudo">
+                    <h3 class="red">Baú épico</h3>
+                    <img src="./img/chest-wood.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="./img/btn-arrow.svg" alt="" />
+            </div>
+          </div>
+          <a href="#" class="btn">
+            ver todos
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
   <div class="teste">
     <?php
@@ -281,7 +334,7 @@
         <div class="container">
           <div class="row">
             <h2 class="text-gradient">bombers</h2>
-            <div class="swiper-bombers">
+            <div class="swiper-bombers swiper-bombpix">
               <div class="button-prev">
                 <img src="./img/btn-arrow.svg" alt="" />
               </div>

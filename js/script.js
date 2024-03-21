@@ -22,8 +22,7 @@ accordion.forEach(item => {
       answer.style.maxHeight = 0
       item.classList.remove('open')
     } else {
-      answer.style.maxHeight =
-        answer.querySelector('.content').scrollHeight + 'px'
+      answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
       item.classList.add('open')
     }
   })
@@ -44,9 +43,7 @@ function initModalDialog() {
 
   if (modalButtons.length) {
     modalButtons.forEach(button => {
-      const modal = document.querySelector(
-        `[data-dialog-modal="${button.dataset.buttonModal}"]`
-      )
+      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
 
       button.addEventListener('click', () => {
         modal.classList.add('fade-in')
@@ -61,9 +58,7 @@ function initModalDialog() {
         }, 1000 * 0.3)
       }
 
-      const buttonsClose = modal.querySelectorAll(
-        '[data-dialog-modal="modal-close"]'
-      )
+      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
       buttonsClose.forEach(buttonClose => {
         buttonClose.addEventListener('click', () => {
           fadeOut()
@@ -94,19 +89,15 @@ const swiperBombers = new Swiper('.swiper-bombers .swiper', {
     nextEl: '.swiper-bombers .button-next',
     prevEl: '.swiper-bombers .button-prev'
   }
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: true
-  // }
 })
-const swiperteste = new Swiper('.swiper-teste .swiper', {
-  loop: true,
-  slidesPerView: 1,
+const swiperChests = new Swiper('.swiper-chests .swiper', {
+  slidesPerView: 4,
   navigation: {
-    nextEl: '.swiper-teste .button-next',
-    prevEl: '.swiper-teste .button-prev'
+    nextEl: '.swiper-chests .button-next',
+    prevEl: '.swiper-chests .button-prev'
   }
 })
+
 /*SWIPER */
 
 AOS.init()

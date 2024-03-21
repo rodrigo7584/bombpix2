@@ -1,0 +1,68 @@
+.marketplace {
+  padding: 10rem 0 4rem 0;
+  z-index: 10;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('../img/earth.png');
+  background-color: #974024;
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+.marketplace .col h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+.marketplace .col a.btn {
+  margin: 3rem auto;
+}
+.marketplace .swiper-chests .swiper-conteudo {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid red;
+}
+
+.marketplace .swiper-chests .swiper-conteudo::before {
+  content: '';
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  background-color: #500600;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+.marketplace .swiper-chests .swiper-conteudo h3 {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+  position: relative;
+  z-index: 6;
+  font-family: 'crang', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  background: #974024;
+  border-radius: 5rem;
+  padding: 1.3rem 1rem 1rem 1rem;
+}
+.marketplace .swiper-chests .swiper-conteudo h3.light-green {
+  background-color: #00b200;
+}
+.marketplace .swiper-chests .swiper-conteudo h3.green {
+  background-color: #005a1c;
+}
+.marketplace .swiper-chests .swiper-conteudo h3.blue {
+  background-color: #003bd6;
+}
+.marketplace .swiper-chests .swiper-conteudo h3.red {
+  background-color: #ff251b;
+}
+.marketplace .swiper-chests .swiper-conteudo img {
+  width: 15rem;
+  position: relative;
+  z-index: 6;
+  filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.7));
+}

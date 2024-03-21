@@ -82,7 +82,7 @@
 /*DIALOG MODAL*/
 dialog.dialog-modal {
   padding: 4rem;
-  border-radius:3rem;
+  border-radius: 3rem;
   border: none;
   opacity: 0;
   overflow: visible;
@@ -92,7 +92,7 @@ dialog.dialog-modal {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1000;
 }
-dialog.dialog-modal .dialog-content{
+dialog.dialog-modal .dialog-content {
   position: relative;
 }
 dialog.dialog-modal::backdrop {
@@ -167,6 +167,43 @@ dialog.dialog-modal .dialog-close:hover {
   -webkit-text-stroke-color: #000;
 }
 /*END TEXTS*/
+/*SWIPER*/
+.swiper-bombpix {
+  display: grid;
+  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  grid-column: 2/3;
+}
+.swiper-bombpix .button-prev img {
+  transform: rotate(180deg);
+  animation: buttonPrev 1s ease-in-out infinite;
+}
+.swiper-bombpix .button-next img {
+  animation: buttonNext 1s ease-in-out infinite;
+}
+.swiper-bombpix .button-next img,
+.swiper-bombpix .button-prev img {
+  width: 6rem;
+  margin: 0.5rem;
+}
+.swiper-bombpix .button-next:hover,
+.swiper-bombpix .button-prev:hover {
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .swiper-bombpix {
+    grid-template-columns: 4rem calc(100% - 8rem) 4rem;
+  }
+  .swiper-bombpix .button-next img,
+  .swiper-bombpix .button-prev img {
+    width: 3rem;
+  }
+}
+
+/*END SWIPER*/
 .division-grass {
   position: relative;
   z-index: 11;
@@ -190,7 +227,7 @@ dialog.dialog-modal .dialog-close:hover {
 }
 .division-wood-2 {
   position: relative;
-  z-index: 11; 
+  z-index: 11;
   width: 100%;
 }
 .division-wood-2 .bush {
@@ -210,7 +247,18 @@ dialog.dialog-modal .dialog-close:hover {
   height: 5rem;
   margin: -2.5rem 0;
 }
-
+.division-grass-2 {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+}
+.division-grass-2 .grass {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  height: 10rem;
+  margin: -5rem 0;
+}
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
