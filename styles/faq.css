@@ -1,0 +1,85 @@
+.faq {
+  padding: 10rem 0 4rem 0;
+  z-index: 10;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('../img/earth.png');
+  background-color: #70311d;
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+.faq .bomb {
+  position: absolute;
+  top: 30%;
+  right: -5rem;
+  z-index: 12;
+  width: 15rem;
+  -webkit-animation: vibrate-2 0.3s linear infinite both;
+  animation: vibrate-2 0.3s linear infinite both;
+}
+.faq h2{
+  font-size:6rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.faq .col{
+  width: 80%;
+  margin: 0 auto;
+}
+.faq .accordion {
+   margin-bottom: 2rem;
+}
+.faq .accordion .question {
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-family: 'crang', sans-serif;
+  font-size: 1.5rem;
+  background-color: #974024;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.faq .accordion .question p {
+  margin-bottom: 0;
+}
+.faq .accordion .question img {
+  height: 3rem;
+  width: 3rem;
+  max-width: 100%;
+  transition: 0.3s all ease-in-out;
+  animation: faqSubindo 1s ease-in-out infinite;
+}
+.faq .accordion.open .question img {
+  animation: faqDescendo 1s ease-in-out infinite;
+}
+.faq .accordion .question:hover {
+  cursor: pointer;
+}
+.faq .accordion .answer .content {
+  padding: 3rem 7rem 3rem 7rem; 
+  background: url('../img/scrool-2.svg');
+  background-repeat: no-repeat;
+  background-size: calc(100% -  1rem) 100%;
+  background-position: center top;
+}
+.faq .accordion .answer p {
+  line-height: 1.2;
+  font-family: 'cabinet-bold', sans-serif;
+  font-size: 1.5rem;
+  color: var(--branco);
+}
+.faq .accordion .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.faq .accordion .answer.open {
+  max-height: 800px;
+}
+@media (max-width: 576px) {
+  .faq .accordion .question {
+    font-size: 2rem;
+  }
+}

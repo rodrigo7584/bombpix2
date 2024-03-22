@@ -6,18 +6,7 @@
   scroll-behavior: smooth;
   box-sizing: border-box !important;
 }
-@font-face {
-  font-family: 'crang';
-  src: url('../fonts/Crang.ttf');
-}
-@font-face {
-  font-family: 'cabinet-bold';
-  src: url('../fonts/CabinetGrotesk-Bold.otf');
-}
-@font-face {
-  font-family: 'cabinet-regular';
-  src: url('../fonts/CabinetGrotesk-Regular.otf');
-}
+
 /*
 #f3dfc3
 #c7653d
@@ -68,14 +57,6 @@
   width: 60px;
   height: 60px;
   animation: spin 1s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 /*FIM LOADER*/
 
@@ -258,6 +239,60 @@ dialog.dialog-modal .dialog-close:hover {
   width: 100%;
   height: 10rem;
   margin: -5rem 0;
+}
+.division-wood-4 {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+}
+.division-wood-4 .bush {
+  z-index: 19;
+  position: absolute;
+  width: 17rem;
+  left: -7rem;
+  top: -12rem;
+  animation: rotate 2s linear infinite;
+}
+.division-wood-4 .wood {
+  width: 100%;
+  height: 5rem;
+  margin: -2.5rem 0;
+}
+.division-wood-4 .card{
+  position: absolute;
+  width: 15rem;
+  top: -1rem;
+
+}
+.division-wood-4 .card-shuriken{
+  z-index: 12;
+  left: 7%;
+  transform-origin: top left;
+  animation: rotate-3 2s linear infinite;
+}
+.division-wood-4 .card-blue-potion{
+  z-index: 13;
+  left: 11%;
+  transform-origin: top right;
+  animation: rotate-3 1.7s linear infinite;
+}
+.division-wood-4 .card-ninja{
+  z-index: 14;
+  left: 17%;
+  transform-origin: top right;
+  animation: rotate-3 1.9s linear infinite;
+}
+.division-wood-4 .card-green-potion{
+  z-index: 15;
+  left: 75%;
+  transform-origin: top left;
+  animation: rotate-3 1.5s linear infinite;
+}
+.division-wood-4 .card-cauldron{
+  z-index: 16;
+  left: 83%;
+  transform-origin: top right;
+  animation: rotate-3 1.7s linear infinite;
 }
 @media (max-width: 1400px) {
 }

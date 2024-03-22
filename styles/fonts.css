@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'crang', sans-serif;
+  font-family: 'crang';
   src: url('../fonts/Crang.ttf');
 }
 @font-face {
-  font-family: 'cabinet-bold', sans-serif;
+  font-family: 'cabinet-bold';
   src: url('../fonts/CabinetGrotesk-Bold.otf');
 }
 @font-face {
-  font-family: 'cabinet-regular', sans-serif;
+  font-family: 'cabinet-regular';
   src: url('../fonts/CabinetGrotesk-Regular.otf');
 }

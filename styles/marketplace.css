@@ -8,6 +8,15 @@
   background-size: 100% auto;
   background-repeat: repeat;
 }
+.marketplace .tree{
+  position: absolute;
+  width: 15rem;
+  right: -2rem;
+  top: 20%;
+  transform-origin: bottom;
+  animation: rotate-2 2s linear infinite;
+}
+
 .marketplace .col h2 {
   text-align: center;
   font-size: 5rem;
@@ -22,7 +31,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  padding-bottom: 3rem;
 }
 
 .marketplace .swiper-chests .swiper-conteudo::before {
