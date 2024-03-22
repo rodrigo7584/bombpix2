@@ -22,7 +22,8 @@ accordion.forEach(item => {
       answer.style.maxHeight = 0
       item.classList.remove('open')
     } else {
-      answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
+      answer.style.maxHeight =
+        answer.querySelector('.content').scrollHeight + 'px'
       item.classList.add('open')
     }
   })
@@ -43,7 +44,9 @@ function initModalDialog() {
 
   if (modalButtons.length) {
     modalButtons.forEach(button => {
-      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
+      const modal = document.querySelector(
+        `[data-dialog-modal="${button.dataset.buttonModal}"]`
+      )
 
       button.addEventListener('click', () => {
         modal.classList.add('fade-in')
@@ -58,7 +61,9 @@ function initModalDialog() {
         }, 1000 * 0.3)
       }
 
-      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
+      const buttonsClose = modal.querySelectorAll(
+        '[data-dialog-modal="modal-close"]'
+      )
       buttonsClose.forEach(buttonClose => {
         buttonClose.addEventListener('click', () => {
           fadeOut()
@@ -84,7 +89,7 @@ initModalDialog()
 /*SWIPER */
 const swiperBombers = new Swiper('.swiper-bombers .swiper', {
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 3,
   navigation: {
     nextEl: '.swiper-bombers .button-next',
     prevEl: '.swiper-bombers .button-prev'
@@ -99,5 +104,58 @@ const swiperChests = new Swiper('.swiper-chests .swiper', {
 })
 
 /*SWIPER */
+// const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
+// slidesBombers.forEach(slide => {
+//   const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
+//   slidesTipos.forEach((tipo, tipoIndex) => {
+//     const btnNext = tipo.querySelector('.next')
+//     const btnPrev = tipo.querySelector('.prev')
+//     btnNext.addEventListener('click', () => {
+//       btnPrev.classList.toggle('enable')
+//       btnNext.classList.toggle('enable')
+//       slidesTipos.forEach(item => {
+//         item.classList.remove('active')
+//       })
+//       slidesTipos[tipoIndex].classList.add('active')
+//     })
+//     btnPrev.addEventListener('click', () => {
+//       btnPrev.classList.toggle('enable')
+//       btnNext.classList.toggle('enable')
+//       slidesTipos.forEach(item => {
+//         item.classList.remove('active')
+//       })
+//       slidesTipos[tipoIndex].classList.add('active')
+//     })
+//   })
+//   slidesTipos[0].classList.add('active')
+// })
 
+const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
+slidesBombers.forEach(slide => {
+  const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
+  slidesTipos.forEach((tipo, tipoIndex) => {
+    const btnNext = tipo.querySelector('.next')
+    const btnPrev = tipo.querySelector('.prev')
+    const title = tipo.querySelectorAll('h3')
+    const text = tipo.querySelectorAll('p')
+    const image = tipo.querySelectorAll('.img-bomber')
+    title[0].classList.add('active')
+    text[0].classList.add('active')
+    image[0].classList.add('active')
+    let pag = 0
+    btnNext.addEventListener('click', () => {
+      title.forEach(item => {
+        item.classList.remove('active')
+      })
+      if (pag < slidesTipos.length) {
+        pag = pag + 1
+        title[pag].classList.add('active')
+      } else if ((pag = slidesTipos.length)) {
+        pag = pag + 1
+        title[pag].classList.add('active')
+        btnNext.classList.remove('enable')
+      }
+    })
+  })
+})
 AOS.init()

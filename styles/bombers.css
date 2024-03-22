@@ -1,3 +1,18 @@
+.bombers{
+  padding: 10rem 0 4rem 0;
+  z-index: 10;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('../img/earth.png');
+  background-color: #70311d;
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+.bombers h2{
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
 .bombers .swiper-bombers {
   display: grid;
   grid-template-columns: 7rem calc(100% - 14rem) 7rem;
@@ -5,15 +20,64 @@
 }
 .bombers .swiper-bombers .swiper {
   width: 100%;
+}.bombers .swiper-bombers .swiper-slide {
+  background: url(../img/scrool.svg);
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  padding: 5rem 4rem 1rem 4rem;
 }
 .bombers .swiper-bombers .swiper-conteudo {
-  border-radius: 3rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: url(../img/scrool.svg);
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  padding: 5rem 4rem 1rem 4rem; */
+  width: 30rem;
+}
+.bombers .swiper-bombers .swiper-conteudo h3{
+  color: #ff9000;
+  -webkit-text-stroke-width: 3px;
+  line-height: 1.1;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: none;
+}
+.bombers .swiper-bombers .swiper-conteudo p{
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 2rem;
+  display: none;
+}
+.bombers .swiper-bombers .controls button.enable{
+  background: red;
+  opacity: 1;
+}
+.bombers .swiper-bombers .controls button{
+  opacity: 0.5;
+}
+.bombers .swiper-bombers .swiper-conteudo .img-bomber {
+  width: 100%;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2rem solid var(--preto-transparente);
+  display: none;
 }
+.bombers .swiper-bombers .swiper-conteudo h3.active,
+.bombers .swiper-bombers .swiper-conteudo p.active,
+.bombers .swiper-bombers .swiper-conteudo .img-bomber.active {
+  display: block;
+}
+.bombers .swiper-bombers .swiper-conteudo .img-bomber img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .bombers .swiper-bombers .button-prev img {
   transform: rotate(180deg);
   animation: buttonPrev 1s ease-in-out infinite;
@@ -51,15 +115,4 @@
   .bombers .swiper-bombers .button-prev img {
     width: 3rem;
   }
-}
-
-
-
-.bombers .swiper-teste {
-  display: grid;
-  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
-  align-items: center;
-}
-.bombers .swiper-teste .swiper {
-  width: 100%;
 }

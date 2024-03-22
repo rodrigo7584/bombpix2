@@ -286,7 +286,7 @@
       </div>
     </div>
   </section>
-  -->
+
   <div class="division-wood-4">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
@@ -521,93 +521,127 @@
       </div>
     </div>
   </section>
-  <div class="teste">
+  -->
     <?php
       $chars = [
-        'char1' => [
+        'cavaleiro' => [
             'type1' => [
-                'name' => 'cavaleiro aprendiz',
-                'description' => 'descrição 1'
+                'name' => 'cavaleiro <br> aprendiz',
+                'description' => 'O cavaleiro Aprendiz exibe notável força física,
+                 trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+                'img' => 'guerreiro'
             ],
             'type2' => [
-                'name' => 'cavaleiro formado',
-                'description' => 'descrição 2'
+              'name' => 'cavaleiro <br> lendário',
+              'description' => 'O cavaleiro Aprendiz exibe notável força física,
+               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+              'img' => 'guerreiro'
             ],
             'type3' => [
-                'name' => 'cavaleiro top',
-                'description' => 'descrição 2'
-            ]
+              'name' => 'cavaleiro <br> lendário 2',
+              'description' => 'O cavaleiro Aprendiz exibe notável força física,
+               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+              'img' => 'guerreiro'
+            ],
         ],
-        'char2' => [
-            'type1' => [
-                'name' => 'bruxa aprendiz',
-                'description' => 'descrição 1'
-            ],
-            'type2' => [
-                'name' => 'bruxa formado',
-                'description' => 'descrição 2'
-            ],
-            'type3' => [
-                'name' => 'bruxa top',
-                'description' => 'descrição 2'
-            ]
-        ]
+        'jogador' => [
+          'type1' => [
+              'name' => 'jogador <br> várzea',
+              'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
+              'img' => 'jogador'
+          ],
+          'type2' => [
+            'name' => 'jogador <br> profissional',
+            'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
+            'img' => 'jogador'
+          ],
+        ],
+        'aventureiro' => [
+          'type1' => [
+            'name' => 'cowboy <br> errante',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'aventureiro'
+          ],
+          'type2' => [
+            'name' => 'cowboy <br> justiceiro',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'aventureiro'
+          ],
+        ],
+        'bruxa' => [
+          'type1' => [
+            'name' => 'bruxa <br> ESTUDANTE',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'bruxa'
+          ],
+          'type2' => [
+            'name' => 'bruxa <br> ACADÊMICA',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'bruxa'
+          ],
+        ],
+        'ninja' => [
+          'type1' => [
+            'name' => 'ninja <br> DESAFIANTE',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'ninja'
+          ],
+          'type2' => [
+            'name' => 'cowboy <br> ESPECIALISTA',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'ninja'
+          ],
+        ],
       ];
     ?>
-    <?php foreach($chars as $char){ ?>
-    <div class="char">
-      <?php foreach($char as $charType){ ?>
-      <h1>
-        <?php echo $charType['name'] ?>
-      </h1>
-      <?php  } ?>
-    </div>
-    <?php }  ?>
-  </div>
-  <!-- <section class="bombers">
-        <div class="container">
-          <div class="row">
-            <h2 class="text-gradient">bombers</h2>
-            <div class="swiper-bombers swiper-bombpix">
-              <div class="button-prev">
-                <img src="./img/btn-arrow.svg" alt="" />
-              </div>
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="swiper-conteudo">
-                      <h3 class="text-outline">Cavaleiro Aprendiz</h3>
-                      <p class="text-normal">
-                        O cavaleiro Aprendiz exibe notável força física,
-                        trajando uma imponente armadura decorada com explosivas
-                        runas ancestrais.
-                      </p>
 
-                    </div>
+  <section class="bombers">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-gradient">bombers</h2>
+        <div class="swiper-bombers swiper-bombpix">
+          <div class="button-prev">
+            <img src="./img/btn-arrow.svg" alt="" />
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <?php foreach($chars as $char){?>
+              <div class="swiper-slide">
+                <div class="swiper-conteudo">
+                <?php foreach($char as $key => $charType){?>
+                
+                  <h3 class="text-outline">
+                    <?php echo $charType['name']?>
+                  </h3>
+                  <p class="text-bold">
+                    <?php echo $charType['description']?>
+                  </p>
+                  <?php }; ?>
+                  <div class="controls">
+                    <button class='prev'>
+                      vai
+                    </button>
+                    <button class='next enable'>
+                      vorta
+                    </button>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-conteudo">
-                      <h1>ola2</h1>
-                    </div>
+                  <?php foreach($char as $key => $charType){?>
+                  <div class="img-bomber">
+                    <img src="./img/<?php echo $charType['img']?>.png" alt="" >
                   </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-conteudo">
-                      <h1>ola3</h1>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-conteudo">
-                      <h1>ola4</h1>
-                    </div>
-                  </div>
+                
+                <?php }; ?>
                 </div>
               </div>
-              <div class="button-next">
-                <img src="./img/btn-arrow.svg" alt="" />
-              </div>
+              <?php }; ?>
             </div>
           </div>
+          <div class="button-next">
+            <img src="./img/btn-arrow.svg" alt="" />
+          </div>
         </div>
-      </section> -->
+      </div>
+    </div>
+  </section>
 </main>
 <?php include 'footer.php'?>
