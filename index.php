@@ -1,6 +1,6 @@
 <?php include 'header.php'?>
 <main>
-  <section class="hero">
+  <section class="hero" id="hero">
     <img src="./img/cloud.png" class="cloud-1 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-2 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-3 bg-element" alt="" />
@@ -139,7 +139,7 @@
         ],
       ];
     ?>
-  <section class="bombers">
+  <section class="bombers" id="bombers">
     <div class="container">
       <div class="row">
         <h2 class="text-gradient">bombers</h2>
@@ -360,7 +360,7 @@
   <div class="division-grass-2">
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
-  <section class="marketplace">
+  <section class="marketplace" id="marketplace">
     <img src="./img/tree-2.png" alt="" class="tree">
     <div class="container">
       <div class="row">

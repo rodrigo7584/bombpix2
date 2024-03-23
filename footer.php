@@ -9,7 +9,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.php#home">Início</a></li>
+            <li><a href="index.php#hero">Início</a></li>
             <li><a href="index.php#roadmap">Roadmap</a></li>
             <li><a href="index.php#whitepaper">Whitepaper</a></li>
             <li><a href="index.php#bombers">Bombers</a></li>
