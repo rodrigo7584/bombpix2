@@ -206,6 +206,24 @@ dialog.dialog-modal .dialog-close:hover {
   height: 10rem;
   margin: -5rem 0;
 }
+.division-wood {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+}
+.division-wood .tree {
+  position: absolute;
+  width: 17rem;
+  left: -1rem;
+  top: -0rem;
+  transform-origin: bottom;
+  animation: rotate-2 2s linear infinite;
+}
+.division-wood .wood {
+  width: 100%;
+  height: 5rem;
+  margin: -2.5rem 0;
+}
 .division-wood-2 {
   position: relative;
   z-index: 11;
@@ -222,6 +240,11 @@ dialog.dialog-modal .dialog-close:hover {
   width: 100%;
   height: 5rem;
   margin: -2.5rem 0;
+}
+.division-wood-3 {
+  position: relative;
+  z-index: 11;
+  width: 100%;
 }
 .division-wood-3 .wood {
   width: 100%;

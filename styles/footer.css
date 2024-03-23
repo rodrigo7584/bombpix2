@@ -18,6 +18,10 @@ footer .area-logo {
 footer .area-logo .logo {
   max-width: 100%;
 }
+footer .area-logo .logo:hover{
+  -webkit-animation: vibrate-2 0.3s linear infinite both;
+  animation: vibrate-2 0.3s linear infinite both; 
+}
 footer nav ul {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,10 @@ footer nav ul li a {
   color: #fff;
   font-size: 1.7rem;
   text-transform: uppercase;
+}
+footer nav ul li a:hover {
+  filter: brightness(0.95);
+  transform: scale(0.97);
 }
 footer form {
   display: flex;

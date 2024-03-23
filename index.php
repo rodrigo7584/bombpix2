@@ -1,6 +1,5 @@
 <?php include 'header.php'?>
 <main>
-  <!-- 
   <section class="hero">
     <img src="./img/cloud.png" class="cloud-1 bg-element" alt="" />
     <img src="./img/cloud.png" class="cloud-2 bg-element" alt="" />
@@ -38,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="scroll">
+          <div class="scroll"data-aos="zoom-in">
             <h2 class="text-outline">de onde vem as</h2>
             <h2 class="text-gradient" data-texto="Bombcoins?">
               bombcoins?
@@ -64,12 +63,136 @@
       </div>
     </div>
   </section>
+  <div class="division-wood">
+    <img src="./img/wood.png" alt="" class="wood" />
+    <img src="./img/tree-3.png" alt="" class="tree" />
+  </div>
+  <?php
+      $chars = [
+        'cavaleiro' => [
+            'type1' => [
+                'name' => 'cavaleiro <br> aprendiz',
+                'description' => 'O cavaleiro Aprendiz exibe notável força física,
+                 trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+                'img' => 'guerreiro'
+            ],
+            'type2' => [
+              'name' => 'cavaleiro <br> lendário',
+              'description' => 'O cavaleiro Aprendiz exibe notável força física,
+               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+              'img' => 'guerreiro'
+            ],
+            'type3' => [
+              'name' => 'cavaleiro <br> lendário 2',
+              'description' => 'O cavaleiro Aprendiz exibe notável força física,
+               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+              'img' => 'guerreiro'
+            ],
+        ],
+        'jogador' => [
+          'type1' => [
+              'name' => 'jogador <br> várzea',
+              'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
+              'img' => 'jogador'
+          ],
+          'type2' => [
+            'name' => 'jogador <br> profissional',
+            'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
+            'img' => 'jogador'
+          ],
+        ],
+        'aventureiro' => [
+          'type1' => [
+            'name' => 'cowboy <br> errante',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'aventureiro'
+          ],
+          'type2' => [
+            'name' => 'cowboy <br> justiceiro',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'aventureiro'
+          ],
+        ],
+        'bruxa' => [
+          'type1' => [
+            'name' => 'bruxa <br> ESTUDANTE',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'bruxa'
+          ],
+          'type2' => [
+            'name' => 'bruxa <br> ACADÊMICA',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'bruxa'
+          ],
+        ],
+        'ninja' => [
+          'type1' => [
+            'name' => 'ninja <br> DESAFIANTE',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'ninja'
+          ],
+          'type2' => [
+            'name' => 'cowboy <br> ESPECIALISTA',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'ninja'
+          ],
+        ],
+      ];
+    ?>
+  <section class="bombers">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-gradient">bombers</h2>
+        <div class="swiper-bombers swiper-bombpix">
+          <div class="button-prev">
+            <img src="./img/btn-arrow.svg" alt="" />
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <?php foreach($chars as $char){?>
+              <div class="swiper-slide">
+                <div class="swiper-conteudo">
+                <?php foreach($char as $key => $charType){?>
+                
+                  <h3 class="text-outline">
+                    <?php echo $charType['name']?>
+                  </h3>
+                  <p class="text-bold">
+                    <?php echo $charType['description']?>
+                  </p>
+                  <?php }; ?>
+                  <div class="controls">
+                    <button class='prev'>
+                      < 
+                    </button>
+                    <button class='next'>
+                     >
+                    </button>
+                  </div>
+                  <?php foreach($char as $key => $charType){?>
+                  <div class="img-bomber" data-aos="zoom-in">
+                    <img src="./img/<?php echo $charType['img']?>.png" alt="" >
+                  </div>
+                
+                <?php }; ?>
+                </div>
+              </div>
+              <?php }; ?>
+            </div>
+          </div>
+          <div class="button-next">
+            <img src="./img/btn-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="division-wood-2">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
   </div>
   <section class="tv">
-    <img src="./img/stickers.png" alt="" class="stickers" />
+    <img src="./img/stickers.png" alt="" class="stickers" data-aos="zoom-out"/>
     <img src="./img/bush-2.svg" alt="" class="bush" />
     <div class="container">
       <div class="row">
@@ -188,7 +311,7 @@
           <div class="scrolls">
             <?php foreach($modes as $modes){?>
             <div class="box-scroll">
-              <div class="scroll">
+              <div class="scroll"data-aos="flip-up">
                 <img src="./img/mode-<?php echo $modes['thumb'];?>.png" alt="" class="thumb">
                 <h3 class="text-gradient">
                   <?php echo $modes['mainTitle'];?>
@@ -252,25 +375,25 @@
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="light-green">Baú ultra comum</h3>
-                    <img src="./img/chest-light-green.png" alt="">
+                    <img src="./img/chest-light-green.png" alt="" data-aos="fade-down">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="green">Baú comum</h3>
-                    <img src="./img/chest-green.png" alt="">
+                    <img src="./img/chest-green.png" alt="" data-aos="fade-down">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="blue">Baú raro</h3>
-                    <img src="./img/chest-blue.png" alt="">
+                    <img src="./img/chest-blue.png" alt="" data-aos="fade-down">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="red">Baú épico</h3>
-                    <img src="./img/chest-wood.png" alt="">
+                    <img src="./img/chest-wood.png" alt="" data-aos="fade-down">
                   </div>
                 </div>
               </div>
@@ -286,7 +409,6 @@
       </div>
     </div>
   </section>
-
   <div class="division-wood-4">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
@@ -521,127 +643,7 @@
       </div>
     </div>
   </section>
-  -->
-    <?php
-      $chars = [
-        'cavaleiro' => [
-            'type1' => [
-                'name' => 'cavaleiro <br> aprendiz',
-                'description' => 'O cavaleiro Aprendiz exibe notável força física,
-                 trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-                'img' => 'guerreiro'
-            ],
-            'type2' => [
-              'name' => 'cavaleiro <br> lendário',
-              'description' => 'O cavaleiro Aprendiz exibe notável força física,
-               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-              'img' => 'guerreiro'
-            ],
-            'type3' => [
-              'name' => 'cavaleiro <br> lendário 2',
-              'description' => 'O cavaleiro Aprendiz exibe notável força física,
-               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-              'img' => 'guerreiro'
-            ],
-        ],
-        'jogador' => [
-          'type1' => [
-              'name' => 'jogador <br> várzea',
-              'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
-              'img' => 'jogador'
-          ],
-          'type2' => [
-            'name' => 'jogador <br> profissional',
-            'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
-            'img' => 'jogador'
-          ],
-        ],
-        'aventureiro' => [
-          'type1' => [
-            'name' => 'cowboy <br> errante',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'aventureiro'
-          ],
-          'type2' => [
-            'name' => 'cowboy <br> justiceiro',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'aventureiro'
-          ],
-        ],
-        'bruxa' => [
-          'type1' => [
-            'name' => 'bruxa <br> ESTUDANTE',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'bruxa'
-          ],
-          'type2' => [
-            'name' => 'bruxa <br> ACADÊMICA',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'bruxa'
-          ],
-        ],
-        'ninja' => [
-          'type1' => [
-            'name' => 'ninja <br> DESAFIANTE',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'ninja'
-          ],
-          'type2' => [
-            'name' => 'cowboy <br> ESPECIALISTA',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'ninja'
-          ],
-        ],
-      ];
-    ?>
+ 
 
-  <section class="bombers">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-gradient">bombers</h2>
-        <div class="swiper-bombers swiper-bombpix">
-          <div class="button-prev">
-            <img src="./img/btn-arrow.svg" alt="" />
-          </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <?php foreach($chars as $char){?>
-              <div class="swiper-slide">
-                <div class="swiper-conteudo">
-                <?php foreach($char as $key => $charType){?>
-                
-                  <h3 class="text-outline">
-                    <?php echo $charType['name']?>
-                  </h3>
-                  <p class="text-bold">
-                    <?php echo $charType['description']?>
-                  </p>
-                  <?php }; ?>
-                  <div class="controls">
-                    <button class='prev'>
-                      vai
-                    </button>
-                    <button class='next enable'>
-                      vorta
-                    </button>
-                  </div>
-                  <?php foreach($char as $key => $charType){?>
-                  <div class="img-bomber">
-                    <img src="./img/<?php echo $charType['img']?>.png" alt="" >
-                  </div>
-                
-                <?php }; ?>
-                </div>
-              </div>
-              <?php }; ?>
-            </div>
-          </div>
-          <div class="button-next">
-            <img src="./img/btn-arrow.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 <?php include 'footer.php'?>

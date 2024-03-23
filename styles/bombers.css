@@ -20,21 +20,21 @@
 }
 .bombers .swiper-bombers .swiper {
   width: 100%;
-}.bombers .swiper-bombers .swiper-slide {
+}
+.bombers .swiper-bombers .swiper-slide {
   background: url(../img/scrool.svg);
-  background-size: 100% 75%;
+  background-size: 90% 75%;
+  background-position: center top;
   background-repeat: no-repeat;
-  padding: 5rem 4rem 1rem 4rem;
+  padding: 5rem 5rem 1rem 5rem;
+  display: flex;
+  align-items: center;
 }
 .bombers .swiper-bombers .swiper-conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: url(../img/scrool.svg);
-  background-size: 100% 75%;
-  background-repeat: no-repeat;
-  padding: 5rem 4rem 1rem 4rem; */
   width: 30rem;
 }
 .bombers .swiper-bombers .swiper-conteudo h3{
@@ -50,14 +50,30 @@
   font-size: 1.4rem;
   text-align: center;
   line-height: 1;
-  margin-bottom: 2rem;
   display: none;
 }
-.bombers .swiper-bombers .controls button.enable{
-  background: red;
-  opacity: 1;
+
+.bombers .swiper-bombers .controls {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 }
 .bombers .swiper-bombers .controls button{
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #70311d;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+.bombers .swiper-bombers .controls button:hover{
+  cursor: pointer;
+}
+.bombers .swiper-bombers .controls button:disabled{
   opacity: 0.5;
 }
 .bombers .swiper-bombers .swiper-conteudo .img-bomber {
@@ -71,13 +87,12 @@
 .bombers .swiper-bombers .swiper-conteudo h3.active,
 .bombers .swiper-bombers .swiper-conteudo p.active,
 .bombers .swiper-bombers .swiper-conteudo .img-bomber.active {
-  display: block;
+  display: flex;
 }
 .bombers .swiper-bombers .swiper-conteudo .img-bomber img{
   max-width: 100%;
   max-height: 100%;
 }
-
 .bombers .swiper-bombers .button-prev img {
   transform: rotate(180deg);
   animation: buttonPrev 1s ease-in-out infinite;

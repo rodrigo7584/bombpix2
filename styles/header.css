@@ -12,6 +12,10 @@ header.menu {
   align-items: center;
   gap: 3rem;
 }
+header.menu .logo-header:hover{
+  -webkit-animation: vibrate-2 0.3s linear infinite both;
+  animation: vibrate-2 0.3s linear infinite both; 
+}
 header.menu .logo-header img {
   width: 9.5rem;
 }

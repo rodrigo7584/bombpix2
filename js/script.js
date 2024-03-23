@@ -129,33 +129,103 @@ const swiperChests = new Swiper('.swiper-chests .swiper', {
 //   })
 //   slidesTipos[0].classList.add('active')
 // })
+document.addEventListener('DOMContentLoaded', function () {
+  const slidesBombers = document.querySelectorAll(
+    '.swiper-bombers .swiper-slide'
+  )
+  slidesBombers.forEach(slide => {
+    const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
 
-const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
-slidesBombers.forEach(slide => {
-  const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
-  slidesTipos.forEach((tipo, tipoIndex) => {
-    const btnNext = tipo.querySelector('.next')
-    const btnPrev = tipo.querySelector('.prev')
-    const title = tipo.querySelectorAll('h3')
-    const text = tipo.querySelectorAll('p')
-    const image = tipo.querySelectorAll('.img-bomber')
-    title[0].classList.add('active')
-    text[0].classList.add('active')
-    image[0].classList.add('active')
-    let pag = 0
-    btnNext.addEventListener('click', () => {
-      title.forEach(item => {
-        item.classList.remove('active')
+    slidesTipos.forEach((tipo, tipoIndex) => {
+      const btnNext = tipo.querySelector('.next')
+      const btnPrev = tipo.querySelector('.prev')
+      const title = tipo.querySelectorAll('h3')
+      const text = tipo.querySelectorAll('p')
+      const image = tipo.querySelectorAll('.img-bomber')
+      let currentIndex = 0
+
+      title[0].classList.add('active')
+      text[0].classList.add('active')
+      image[0].classList.add('active')
+      btnPrev.disabled = true
+      btnNext.disabled = false
+
+      btnNext.addEventListener('click', () => {
+        console.log(currentIndex)
+        console.log(title.length)
+
+        if (currentIndex < title.length - 1) {
+          title[currentIndex].classList.remove('active')
+          text[currentIndex].classList.remove('active')
+          image[currentIndex].classList.remove('active')
+          currentIndex++
+          title[currentIndex].classList.add('active')
+          text[currentIndex].classList.add('active')
+          image[currentIndex].classList.add('active')
+          btnPrev.disabled = false
+
+          if (currentIndex === title.length - 1) {
+            btnNext.disabled = true
+          }
+        }
       })
-      if (pag < slidesTipos.length) {
-        pag = pag + 1
-        title[pag].classList.add('active')
-      } else if ((pag = slidesTipos.length)) {
-        pag = pag + 1
-        title[pag].classList.add('active')
-        btnNext.classList.remove('enable')
-      }
+      btnPrev.addEventListener('click', () => {
+        console.log(currentIndex)
+        console.log(title.length)
+
+        if (currentIndex > 0) {
+          title[currentIndex].classList.remove('active')
+          text[currentIndex].classList.remove('active')
+          image[currentIndex].classList.remove('active')
+          currentIndex--
+          title[currentIndex].classList.add('active')
+          text[currentIndex].classList.add('active')
+          image[currentIndex].classList.add('active')
+          btnNext.disabled = false
+
+          if (currentIndex === 0) {
+            btnPrev.disabled = true
+          }
+        }
+      })
     })
   })
 })
+// document.addEventListener('DOMContentLoaded', function () {
+//   var sliderContainers = document.querySelectorAll('.slider-container')
+
+//   sliderContainers.forEach(function (sliderContainer) {
+//     var slides = sliderContainer.querySelectorAll('.slide')
+//     var slider = sliderContainer.querySelector('.slider')
+//     var prevButton = sliderContainer.querySelector('.prev')
+//     var nextButton = sliderContainer.querySelector('.next')
+//     var currentIndex = 0
+
+//     nextButton.addEventListener('click', function () {
+//       if (currentIndex < slides.length - 1) {
+//         currentIndex++
+//         slider.style.transform = 'translateX(' + -100 * currentIndex + '%)'
+//         prevButton.disabled = false
+//         if (currentIndex === slides.length - 1) {
+//           nextButton.disabled = true
+//         }
+//         nextButton.classList.remove('ativo')
+//         prevButton.classList.add('ativo')
+//       }
+//     })
+
+//     prevButton.addEventListener('click', function () {
+//       if (currentIndex > 0) {
+//         currentIndex--
+//         slider.style.transform = 'translateX(' + -100 * currentIndex + '%)'
+//         nextButton.disabled = false
+//         if (currentIndex === 0) {
+//           prevButton.classList.remove('ativo')
+//           nextButton.classList.add('ativo')
+//         }
+//       }
+//     })
+//   })
+// })
+
 AOS.init()
