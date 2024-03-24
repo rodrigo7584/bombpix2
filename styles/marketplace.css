@@ -75,4 +75,6 @@
   position: relative;
   z-index: 6;
   filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.7));
+  -webkit-animation: wobble-hor-bottom 0.8s infinite both;
+  animation: wobble-hor-bottom 1s infinite both;
 }

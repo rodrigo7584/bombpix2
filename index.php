@@ -74,67 +74,73 @@
                 'name' => 'cavaleiro <br> aprendiz',
                 'description' => 'O cavaleiro Aprendiz exibe notável força física,
                  trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-                'img' => 'guerreiro'
+                'img' => 'cavaleiro01'
             ],
             'type2' => [
               'name' => 'cavaleiro <br> lendário',
               'description' => 'O cavaleiro Aprendiz exibe notável força física,
                trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-              'img' => 'guerreiro'
-            ],
-            'type3' => [
-              'name' => 'cavaleiro <br> lendário 2',
-              'description' => 'O cavaleiro Aprendiz exibe notável força física,
-               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
-              'img' => 'guerreiro'
+              'img' => 'cavaleiro02'
             ],
         ],
         'jogador' => [
           'type1' => [
               'name' => 'jogador <br> várzea',
               'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
-              'img' => 'jogador'
+              'img' => 'jogador01'
           ],
           'type2' => [
             'name' => 'jogador <br> profissional',
             'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
-            'img' => 'jogador'
+            'img' => 'jogador02'
           ],
         ],
         'aventureiro' => [
           'type1' => [
             'name' => 'cowboy <br> errante',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'aventureiro'
+            'img' => 'aventureiro01'
           ],
           'type2' => [
             'name' => 'cowboy <br> justiceiro',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'aventureiro'
+            'img' => 'aventureiro02'
           ],
         ],
         'bruxa' => [
           'type1' => [
             'name' => 'bruxa <br> ESTUDANTE',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'bruxa'
+            'img' => 'bruxa01'
           ],
           'type2' => [
             'name' => 'bruxa <br> ACADÊMICA',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'bruxa'
+            'img' => 'bruxa02'
           ],
         ],
         'ninja' => [
           'type1' => [
             'name' => 'ninja <br> DESAFIANTE',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'ninja'
+            'img' => 'ninja01'
           ],
           'type2' => [
-            'name' => 'cowboy <br> ESPECIALISTA',
+            'name' => 'ninja <br> ESPECIALISTA',
             'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
-            'img' => 'ninja'
+            'img' => 'ninja02'
+          ],
+        ],
+        'felino' => [
+          'type1' => [
+            'name' => 'Felino <br> gato',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'felino01'
+          ],
+          'type2' => [
+            'name' => 'Felino <br> leão',
+            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'img' => 'felino02'
           ],
         ],
       ];
@@ -375,25 +381,25 @@
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="light-green">Baú ultra comum</h3>
-                    <img src="./img/chest-light-green.png" alt="" data-aos="fade-down">
+                    <img src="./img/chest-light-green.png" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="green">Baú comum</h3>
-                    <img src="./img/chest-green.png" alt="" data-aos="fade-down">
+                    <img src="./img/chest-green.png" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="blue">Baú raro</h3>
-                    <img src="./img/chest-blue.png" alt="" data-aos="fade-down">
+                    <img src="./img/chest-blue.png" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="red">Baú épico</h3>
-                    <img src="./img/chest-wood.png" alt="" data-aos="fade-down">
+                    <img src="./img/chest-wood.png" alt="">
                   </div>
                 </div>
               </div>
