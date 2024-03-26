@@ -72,6 +72,7 @@ dialog.dialog-modal {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1000;
+  filter: drop-shadow(20px 20px 0px #fb8e00);
 }
 dialog.dialog-modal .dialog-content {
   position: relative;
@@ -89,6 +90,19 @@ dialog.dialog-modal .dialog-close:hover {
 .fade-out {
   animation: fade-out 0.3s linear;
   animation-fill-mode: forwards;
+}
+dialog .dialog-close {
+  position: absolute;
+  left: -8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+dialog .dialog-close img {
+  width: 6rem;
+}
+dialog p {
+  font-size: 1.4rem;
+  line-height: 1.3;
 }
 /*END DIALOG MODAL*/
 /*BTNS*/
@@ -281,37 +295,36 @@ dialog.dialog-modal .dialog-close:hover {
   height: 5rem;
   margin: -2.5rem 0;
 }
-.division-wood-4 .card{
+.division-wood-4 .card {
   position: absolute;
   width: 15rem;
   top: -1rem;
-
 }
-.division-wood-4 .card-shuriken{
+.division-wood-4 .card-shuriken {
   z-index: 12;
   left: 7%;
   transform-origin: top left;
   animation: rotate-3 2s linear infinite;
 }
-.division-wood-4 .card-blue-potion{
+.division-wood-4 .card-blue-potion {
   z-index: 13;
   left: 11%;
   transform-origin: top right;
   animation: rotate-3 1.7s linear infinite;
 }
-.division-wood-4 .card-ninja{
+.division-wood-4 .card-ninja {
   z-index: 14;
   left: 17%;
   transform-origin: top right;
   animation: rotate-3 1.9s linear infinite;
 }
-.division-wood-4 .card-green-potion{
+.division-wood-4 .card-green-potion {
   z-index: 15;
   left: 75%;
   transform-origin: top left;
   animation: rotate-3 1.5s linear infinite;
 }
-.division-wood-4 .card-cauldron{
+.division-wood-4 .card-cauldron {
   z-index: 16;
   left: 83%;
   transform-origin: top right;

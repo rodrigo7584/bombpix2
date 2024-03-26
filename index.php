@@ -32,17 +32,41 @@
     <img src="./img/bomb.png" class="bomb" alt="" />
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
-  <section class="where">
+  <!-- <section class="where">
     <img src="./img/bomb-2.png" class="bomb" alt="" />
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="scroll"data-aos="zoom-in">
+          <div class="scroll" data-aos="zoom-in">
             <h2 class="text-outline">de onde vem as</h2>
             <h2 class="text-gradient" data-texto="Bombcoins?">
               bombcoins?
             </h2>
-            <a href="#" class="btn">ver todos</a>
+            <button href="#" class="btn" data-button-modal="modal-char-where">ver todos</button>
+            <dialog class="dialog-modal" data-dialog-modal="modal-char-where">
+              <div class="dialog-content">
+                <div class="main-title">
+                  <h4 class="text-gradient">
+                    de onde vem as bombcoins?
+                  </h4>
+                </div>
+                <div class="char-container">
+                  <div class="char-content">
+                    <p class="text-bold">
+                      Bombcoins, a moeda explosiva, tem sua origem envolta em mistério.
+                      Surge de um mundo virtual onde a inovação tecnológica se entrelaça
+                      com a criatividade humana, desafiando fronteiras e criando uma
+                      revolução financeira única. Explore esse universo digital onde cada
+                      transação é uma explosão de possibilidades, moldando o futuro das
+                      finanças de maneira inovadora e emocionante.
+                    </p>
+                  </div>
+                </div>
+                <button class="dialog-close" data-dialog-modal="modal-close">
+                  <img src="./img/btn-close.svg" alt="">
+                </button>
+              </div>
+            </dialog>
           </div>
         </div>
         <div class="col">
@@ -78,8 +102,8 @@
             ],
             'type2' => [
               'name' => 'cavaleiro <br> lendário',
-              'description' => 'O cavaleiro Aprendiz exibe notável força física,
-               trajando uma imponente armadura decorada com explosivas runas ancestrais.',
+              'description' => 'O cavaleiro da Fúria possi uma força física impressionante e veste
+              uma armadura imponente adornada com runas ancestrais de explosão.',
               'img' => 'cavaleiro02'
             ],
         ],
@@ -91,7 +115,8 @@
           ],
           'type2' => [
             'name' => 'jogador <br> profissional',
-            'description' => 'O jogador várzea exibe habilidades destacadas no jogo, adapta-se facilmente a diferentes estratégias e possui ua mentalidade altamente competitiva.',
+            'description' => 'O jogador profissional possui habilidade excepcionais no jogo, adaptabilidade a diferentes estratégias e mentalidade competitiva.
+             Vest um uniforme esportivo de alta tecnologia e equipamento de última geração.',
             'img' => 'jogador02'
           ],
         ],
@@ -103,43 +128,51 @@
           ],
           'type2' => [
             'name' => 'cowboy <br> justiceiro',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'description' => 'O Cowboy Justiciero possui habilidades em montaria, destreza no manejo de cordas, 
+            coragem e resistência física. Vestido com um chapéu de abas largas e um poncho empoeirado',
             'img' => 'aventureiro02'
           ],
         ],
         'bruxa' => [
           'type1' => [
             'name' => 'bruxa <br> ESTUDANTE',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'description' => 'A bruxa estudante é versada em magia mestra de rituais e dotada de habilidades místicas. Ela
+            veste um elegante vestido roxo e desloca-se no ar com uma vassoura voadora. ',
             'img' => 'bruxa01'
           ],
           'type2' => [
             'name' => 'bruxa <br> ACADÊMICA',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'description' => 'A bruxa acadêmica possui estudo aprofundado de magia, domínio de rituais, conhecimento extenso
+             de poções e habilidades místicas. Veste um vestido com detalhes ricos em runas mágicas.',
             'img' => 'bruxa02'
           ],
         ],
         'ninja' => [
           'type1' => [
             'name' => 'ninja <br> DESAFIANTE',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'description' => 'O ninja desafiante incorpora habilidade furtivas, emprega um detonador silencioso e veste um traje azul clássico.',
             'img' => 'ninja01'
           ],
           'type2' => [
             'name' => 'ninja <br> ESPECIALISTA',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'description' => 'O ninja especialista inclui habilidades de stealh, veste um traje moderno misturando tecnologia avançada e tradição.',
             'img' => 'ninja02'
           ],
         ],
         'felino' => [
           'type1' => [
-            'name' => 'Felino <br> gato',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'name' => 'Felino ',
+            'description' => 'Conheça o ágil e astuto "Felino", um mestre das sombras e dos movimentos furtivos. Com sua agilidade felina e olhar
+             penetrante, ele desliza pela arena lançando bombas com precisão mortal. Seus reflexos rápidos e sua habilidade de se esgueirar 
+             pelas passagens mais estreitas o tornam um adversário formidável, capaz de surpreender até mesmo os mais experientes.',
             'img' => 'felino01'
           ],
           'type2' => [
-            'name' => 'Felino <br> leão',
-            'description' => 'O Cowboy errante possui habilidades em montaria e destreza no manejo de cordas. vestido com um chapéu de abas largas e um poncho empoeirado.',
+            'name' => 'Lion',
+            'description' => 'Adentre a arena com o imponente "Rei das Feras", cujo rugido ecoa pela selva do BombPIX, 
+            inspirando temor em seus oponentes. Com sua majestosa juba e poderosas garras, ele domina o campo de batalha, 
+            liderando com ferocidade e coragem. Sua presença imponente é um símbolo de poder e liderança, enquanto ele protege 
+            sua terra com feroz determinação.',
             'img' => 'felino02'
           ],
         ],
@@ -158,8 +191,8 @@
               <?php foreach($chars as $char){?>
               <div class="swiper-slide">
                 <div class="swiper-conteudo">
-                <?php foreach($char as $key => $charType){?>
-                
+                  <?php foreach($char as $key => $charType){?>
+
                   <h3 class="text-outline">
                     <?php echo $charType['name']?>
                   </h3>
@@ -169,18 +202,17 @@
                   <?php }; ?>
                   <div class="controls">
                     <button class='prev'>
-                      < 
-                    </button>
-                    <button class='next'>
-                     >
-                    </button>
+                      < </button>
+                        <button class='next'>
+                          >
+                        </button>
                   </div>
                   <?php foreach($char as $key => $charType){?>
                   <div class="img-bomber" data-aos="zoom-in">
-                    <img src="./img/<?php echo $charType['img']?>.png" alt="" >
+                    <img src="./img/<?php echo $charType['img']?>.png" alt="">
                   </div>
-                
-                <?php }; ?>
+
+                  <?php }; ?>
                 </div>
               </div>
               <?php }; ?>
@@ -198,7 +230,7 @@
     <img src="./img/bush.svg" alt="" class="bush" />
   </div>
   <section class="tv">
-    <img src="./img/stickers.png" alt="" class="stickers" data-aos="zoom-out"/>
+    <img src="./img/stickers.png" alt="" class="stickers" data-aos="zoom-out" />
     <img src="./img/bush-2.svg" alt="" class="bush" />
     <div class="container">
       <div class="row">
@@ -212,7 +244,7 @@
   </section>
   <div class="division-wood-3">
     <img src="./img/wood.png" alt="" class="wood" />
-  </div> 
+  </div>
   <?php 
     $modes = [
       'farm'=>[
@@ -317,7 +349,7 @@
           <div class="scrolls">
             <?php foreach($modes as $modes){?>
             <div class="box-scroll">
-              <div class="scroll"data-aos="flip-up">
+              <div class="scroll" data-aos="flip-up">
                 <img src="./img/mode-<?php echo $modes['thumb'];?>.png" alt="" class="thumb">
                 <h3 class="text-gradient">
                   <?php echo $modes['mainTitle'];?>
@@ -362,7 +394,7 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
   <div class="division-grass-2">
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
@@ -418,7 +450,7 @@
   <div class="division-wood-4">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
-    <img src="./img/card-shuriken.png" alt="" class="card card-shuriken">  
+    <img src="./img/card-shuriken.png" alt="" class="card card-shuriken">
     <img src="./img/card-blue-potion.png" alt="" class="card card-blue-potion">
     <img src="./img/card-ninja.png" alt="" class="card card-ninja">
     <img src="./img/card-green-potion.png" alt="" class="card card-green-potion">
@@ -628,28 +660,26 @@
       <div class="row">
         <div class="col">
           <h2 class="text-gradient">faq</h2>
-            <?php foreach($questions as $question){?>
-            <div class="accordion" data-aos="fade-right">
-              <div class="question">
+          <?php foreach($questions as $question){?>
+          <div class="accordion" data-aos="fade-right">
+            <div class="question">
+              <p>
+                <?php  echo $question['question']?>
+              </p>
+              <img src="./img/btn-arrow.svg" alt="" />
+            </div>
+            <div class="answer">
+              <div class="content">
                 <p>
-                  <?php  echo $question['question']?>
+                  <?php  echo $question['answer']?>
                 </p>
-                <img src="./img/btn-arrow.svg" alt="" />
-              </div>
-              <div class="answer">
-                <div class="content">
-                  <p>
-                    <?php  echo $question['answer']?>
-                  </p>
-                </div>
               </div>
             </div>
-            <?php }; ?>
+          </div>
+          <?php }; ?>
         </div>
       </div>
     </div>
-  </section>
- 
-
+  </section> -->
 </main>
 <?php include 'footer.php'?>
