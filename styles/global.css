@@ -68,9 +68,9 @@ dialog.dialog-modal {
   opacity: 0;
   overflow: visible;
   width: 75rem;
-  left: 50%;
+  /* left: 50%;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); */
   z-index: 1000;
   filter: drop-shadow(20px 20px 0px #fb8e00);
 }
@@ -336,10 +336,71 @@ dialog p {
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+  .division-wood-4 .card-green-potion {
+    left: 69%;
+  }
+  .division-wood-4 .card-cauldron {
+    left: 78%;
+  }
 }
 @media (max-width: 768px) {
+  dialog.dialog-modal {
+    width: 48rem;
+  }
+  .division-wood-4 .card {
+    width: 11rem;
+    top: 0;
+  }
+  .division-wood-4 .bush {
+    width: 12rem;
+    left: -5rem;
+    top: -9rem;
+  }
 }
 @media (max-width: 576px) {
+dialog .dialog-close {
+  position: absolute;
+  left: unset;
+  top: -2.5rem;
+  right: -2.5rem;
+  transform: none;
+}
+
+  dialog.dialog-modal {
+    padding: 2rem;
+  }
+  dialog .dialog-close img {
+    width: 4rem;
+  }
+  .division-grass .bomb {
+    position: absolute;
+    top: -12rem;
+    left: -3rem;
+    z-index: 12;
+    width: 11rem;
+  }
+  .division-grass .grass {
+    height: 5rem;
+    margin: -2.5rem 0;
+  }
+  .division-wood .tree {
+    width: 10rem;
+  }
+  .division-wood-2 .bush {
+    width: 12rem;
+    left: -5rem;
+    top: -9rem;
+  }
+  .division-grass-2 .grass {
+    height: 5rem;
+    margin: -2.5rem 0;
+  }
+  .division-wood-4 .card-green-potion {
+    left: 60%;
+  }
+  .division-wood-4 .card-cauldron {
+    left: 68%;
+  }
 }
 @media (max-width: 400px) {
 }

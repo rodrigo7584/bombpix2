@@ -28,6 +28,8 @@
 }
 .faq .accordion {
    margin-bottom: 2rem;
+   position: relative;
+   z-index: 15;
 }
 .faq .accordion .question {
   display: grid;
@@ -40,6 +42,7 @@
   background-color: #974024;
   padding: 1rem 2rem;
   border-radius: 1rem;
+  line-height: 1.4;
 }
 .faq .accordion .question p {
   margin-bottom: 0;
@@ -78,8 +81,8 @@
 .faq .accordion .answer.open {
   max-height: 800px;
 }
-@media (max-width: 576px) {
-  .faq .accordion .question {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .faq .col {
+    width: 100%;
   }
 }

@@ -31,8 +31,8 @@
   <div class="division-grass">
     <img src="./img/bomb.png" class="bomb" alt="" />
     <img src="./img/grass.png" alt="" class="grass" />
-  </div>
-  <!-- <section class="where">
+  </div> 
+  <section class="where">
     <img src="./img/bomb-2.png" class="bomb" alt="" />
     <div class="container">
       <div class="row">
@@ -224,8 +224,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <div class="division-wood-2">
+  </section> 
+   <div class="division-wood-2">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
   </div>
@@ -395,7 +395,7 @@
       </div>
     </div>
   </section>
-  <div class="division-grass-2">
+ <div class="division-grass-2">
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
   <section class="marketplace" id="marketplace">
@@ -446,7 +446,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   <div class="division-wood-4">
     <img src="./img/wood.png" alt="" class="wood" />
     <img src="./img/bush.svg" alt="" class="bush" />
@@ -680,6 +680,6 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>  
 </main>
 <?php include 'footer.php'?>

@@ -17,6 +17,8 @@
   display: grid;
   grid-template-columns: 7rem calc(100% - 14rem) 7rem;
   align-items: center;
+  position: relative;
+  z-index: 15;
 }
 .bombers .swiper-bombers .swiper {
   width: 100%;
@@ -35,7 +37,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30rem;
 }
 .bombers .swiper-bombers .swiper-conteudo h3{
   color: #ff9000;
@@ -120,9 +121,6 @@
   }
 }
 @media (max-width: 576px) {
-  .bombers {
-    background-size: 38%, 35%, 29%, 30%, 100% 100%;
-  }
   .bombers .swiper-bombers {
     grid-template-columns: 4rem calc(100% - 8rem) 4rem;
   }
@@ -130,4 +128,21 @@
   .bombers .swiper-bombers .button-prev img {
     width: 3rem;
   }
+  .bombers .swiper-bombers .swiper-conteudo .img-bomber {
+    height: 20rem;
+  }
+}
+@media (max-width: 576px) {
+.bombers {
+  padding: 6rem 0 4rem 0;
+}
+.bombers h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.bombers .swiper-bombers .swiper-conteudo h3 {
+  -webkit-text-stroke-width: 1.5px;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
 }

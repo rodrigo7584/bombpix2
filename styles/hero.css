@@ -132,3 +132,44 @@
 .hero .btn-play img{
   width: 18rem;
 }
+
+@media (max-width: 576px) {
+  .hero {
+    padding-bottom: 33rem;
+  }
+  .hero h1 {
+    width:100%;
+    font-size: 3rem;
+  }
+  .hero h2 {
+    width:100%;
+    font-size: 1.8rem;
+  }
+  .hero .coin-2 {
+    width: 3rem;
+    top: 53%;
+  }
+  .hero .bomb {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .hero .coin-1 {
+    top: 41%;
+  }
+  .hero .cloud-5 {
+    top: 39%;
+  }
+  .hero .cloud-4 {
+    top: 40%;
+  }
+  .hero .coin-5 {
+    width: 13rem;
+    top: 5%;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding-bottom: 27rem;
+  }
+}

@@ -47,6 +47,7 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 .modes .box-scroll{
   position: relative;
@@ -91,15 +92,6 @@
   grid-template-columns: repeat(2, calc(50% - 3rem));
   gap: 3rem;
 }
-.modes dialog .dialog-close{
-  position: absolute;
-  left: -8rem;
-  top:50%;
-  transform: translateY(-50%);
-}
-.modes dialog .dialog-close img{
-  width: 6rem;
-}
 .modes dialog h5{
   font-size: 2.3rem;
   margin-bottom: 1rem;
@@ -137,6 +129,15 @@
   background-repeat: no-repeat;
   position: absolute;
   }
-/* .modes dialog .coin-list{
-  display: ;
-} */
+  @media (max-width: 768px) {
+    .modes dialog .char-container{
+      grid-template-columns: 100%;
+    }
+  }
+
+  @media(max-width: 576px){
+    .modes dialog .char-container {
+      overflow-x: scroll;
+      max-height: 70vh;
+    }
+  }

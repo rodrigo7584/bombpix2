@@ -29,6 +29,8 @@
   top: -3rem;
 }
 .where .scroll {
+  position: relative;
+  z-index: 15;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -137,4 +139,22 @@
   z-index: 9;
   -webkit-animation: scale-out-center 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
   animation: scale-out-center 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
+}
+@media (max-width: 576px) {
+  .where .scroll {
+    padding: 4rem 3rem;
+  }
+  .where .text-outline {
+    font-size: 3rem;
+  }
+  .where .text-gradient {
+    font-size: 4rem;
+  }
+  .where .row .col{
+    width: 100%;
+  }
+  .where dialog .text-gradient {
+    font-size: 3rem;
+    -webkit-text-stroke-width: 2px;
+ }
 }

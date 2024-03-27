@@ -89,46 +89,41 @@ initModalDialog()
 /*SWIPER */
 const swiperBombers = new Swiper('.swiper-bombers .swiper', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-bombers .button-next',
     prevEl: '.swiper-bombers .button-prev'
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
+    }
   }
 })
 const swiperChests = new Swiper('.swiper-chests .swiper', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-chests .button-next',
     prevEl: '.swiper-chests .button-prev'
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4
+    }
   }
 })
 
 /*SWIPER */
-// const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
-// slidesBombers.forEach(slide => {
-//   const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
-//   slidesTipos.forEach((tipo, tipoIndex) => {
-//     const btnNext = tipo.querySelector('.next')
-//     const btnPrev = tipo.querySelector('.prev')
-//     btnNext.addEventListener('click', () => {
-//       btnPrev.classList.toggle('enable')
-//       btnNext.classList.toggle('enable')
-//       slidesTipos.forEach(item => {
-//         item.classList.remove('active')
-//       })
-//       slidesTipos[tipoIndex].classList.add('active')
-//     })
-//     btnPrev.addEventListener('click', () => {
-//       btnPrev.classList.toggle('enable')
-//       btnNext.classList.toggle('enable')
-//       slidesTipos.forEach(item => {
-//         item.classList.remove('active')
-//       })
-//       slidesTipos[tipoIndex].classList.add('active')
-//     })
-//   })
-//   slidesTipos[0].classList.add('active')
-// })
+
 document.addEventListener('DOMContentLoaded', function () {
   const slidesBombers = document.querySelectorAll(
     '.swiper-bombers .swiper-slide'
@@ -191,41 +186,5 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 })
-// document.addEventListener('DOMContentLoaded', function () {
-//   var sliderContainers = document.querySelectorAll('.slider-container')
-
-//   sliderContainers.forEach(function (sliderContainer) {
-//     var slides = sliderContainer.querySelectorAll('.slide')
-//     var slider = sliderContainer.querySelector('.slider')
-//     var prevButton = sliderContainer.querySelector('.prev')
-//     var nextButton = sliderContainer.querySelector('.next')
-//     var currentIndex = 0
-
-//     nextButton.addEventListener('click', function () {
-//       if (currentIndex < slides.length - 1) {
-//         currentIndex++
-//         slider.style.transform = 'translateX(' + -100 * currentIndex + '%)'
-//         prevButton.disabled = false
-//         if (currentIndex === slides.length - 1) {
-//           nextButton.disabled = true
-//         }
-//         nextButton.classList.remove('ativo')
-//         prevButton.classList.add('ativo')
-//       }
-//     })
-
-//     prevButton.addEventListener('click', function () {
-//       if (currentIndex > 0) {
-//         currentIndex--
-//         slider.style.transform = 'translateX(' + -100 * currentIndex + '%)'
-//         nextButton.disabled = false
-//         if (currentIndex === 0) {
-//           prevButton.classList.remove('ativo')
-//           nextButton.classList.add('ativo')
-//         }
-//       }
-//     })
-//   })
-// })
 
 AOS.init()

@@ -73,7 +73,12 @@ footer form textarea {
   height: 12rem;
   resize: none;
 }
-
+@media (max-width: 992px) {
+  footer .conteudo {
+    display: grid;
+    grid-template-columns: 20rem auto auto;
+  }
+}
 @media (max-width: 768px) {
   footer .conteudo {
     grid-template-columns: repeat(2, calc(50% - 3.5rem));
@@ -88,6 +93,7 @@ footer form textarea {
   footer nav ul li {
     text-align: center;
   }
+ 
 }
 @media (max-width: 576px) {
   footer .conteudo {
