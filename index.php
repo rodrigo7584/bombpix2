@@ -398,6 +398,42 @@
   <div class="division-grass-2">
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
+  <?php 
+       $modes = [
+        'ultra-comum'=>[
+          'tipo'=>'ultra comum',
+          'cor'=>'verde-claro',        
+        ],
+        'comum'=>[
+          'tipo'=>'comum',
+          'cor'=>'vermelho',        
+        ],
+        'raro'=>[
+          'tipo'=>'raro',
+          'cor'=>'azul',        
+        ],
+        'epico'=>[
+          'tipo'=>'épico',
+          'cor'=>'verde-escuro',        
+        ],
+        'lendario'=>[
+          'tipo'=>'lendário',
+          'cor'=>'marrom',        
+        ],
+        'mitico'=>[
+          'tipo'=>'mítco',
+          'cor'=>'roxo',        
+        ],
+        'ultra-mitico'=>[
+          'tipo'=>'ultra mitico',
+          'cor'=>'rosa',        
+        ],
+        'diamante'=>[
+          'tipo'=>'diamante',
+          'cor'=>'amarelo',        
+        ],
+      ]
+  ?>
   <section class="marketplace" id="marketplace">
     <img src="./img/tree-2.png" alt="" class="tree">
     <div class="container">
@@ -413,7 +449,7 @@
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="light-green">Baú ultra comum</h3>
-                    <img src="./img/chest.gif" alt="">
+                    <img src="./img/chest-4.gif" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -425,7 +461,7 @@
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="blue">Baú raro</h3>
-                    <img src="./img/chest-3.gif" alt="">
+                    <img src="./img/chest-5.gif" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
