@@ -8,7 +8,7 @@
   background-size: 100% auto;
   background-repeat: repeat;
 }
-.marketplace .tree{
+.marketplace .tree {
   position: absolute;
   width: 15rem;
   right: -2rem;
@@ -33,6 +33,7 @@
   position: relative;
   /* border: 1px solid red; */
   padding-bottom: 3rem;
+  max-height: 35rem;
 }
 
 .marketplace .swiper-chests .swiper-conteudo::before {
@@ -71,12 +72,13 @@
   background-color: #ff251b;
 }
 .marketplace .swiper-chests .swiper-conteudo img {
-  width: 15rem;
+  width: 40rem;
   position: relative;
   z-index: 6;
-  filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.7));
+  margin-top: -10rem;
+  /* filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.7));
   -webkit-animation: wobble-hor-bottom 0.8s infinite both;
-  animation: wobble-hor-bottom 1s infinite both;
+  animation: wobble-hor-bottom 1s infinite both; */
 }
 
 @media (max-width: 576px) {
@@ -85,6 +87,6 @@
   }
   .marketplace .col h2 {
     position: relative;
-     font-size: 3.5rem;
+    font-size: 3.5rem;
   }
 }

@@ -168,7 +168,7 @@
             'img' => 'felino01'
           ],
           'type2' => [
-            'name' => 'Lion',
+            'name' => 'rei das <br> feras',
             'description' => 'Adentre a arena com o imponente "Rei das Feras", cujo rugido ecoa pela selva do BombPIX, 
             inspirando temor em seus oponentes. Com sua majestosa juba e poderosas garras, ele domina o campo de batalha, 
             liderando com ferocidade e coragem. Sua presença imponente é um símbolo de poder e liderança, enquanto ele protege 
@@ -413,25 +413,25 @@
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="light-green">Baú ultra comum</h3>
-                    <img src="./img/chest-light-green.png" alt="">
+                    <img src="./img/chest.gif" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="green">Baú comum</h3>
-                    <img src="./img/chest-green.png" alt="">
+                    <img src="./img/chest-2.gif" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="blue">Baú raro</h3>
-                    <img src="./img/chest-blue.png" alt="">
+                    <img src="./img/chest-3.gif" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
                     <h3 class="red">Baú épico</h3>
-                    <img src="./img/chest-wood.png" alt="">
+                    <img src="./img/chest-4.gif" alt="">
                   </div>
                 </div>
               </div>
