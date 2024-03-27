@@ -18,22 +18,23 @@ footer .area-logo {
 footer .area-logo .logo {
   max-width: 100%;
 }
-footer .area-logo .logo:hover{
+footer .area-logo .logo:hover {
   -webkit-animation: vibrate-2 0.3s linear infinite both;
-  animation: vibrate-2 0.3s linear infinite both; 
+  animation: vibrate-2 0.3s linear infinite both;
 }
 footer nav ul {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
   padding: 1rem 0;
 }
 footer nav ul li a {
   font-family: 'crang';
   font-size: 1.5rem;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 footer nav ul li a:hover {
   filter: brightness(0.95);
@@ -93,7 +94,6 @@ footer form textarea {
   footer nav ul li {
     text-align: center;
   }
- 
 }
 @media (max-width: 576px) {
   footer .conteudo {

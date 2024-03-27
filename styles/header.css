@@ -12,9 +12,9 @@ header.menu {
   align-items: center;
   gap: 3rem;
 }
-header.menu .logo-header:hover{
+header.menu .logo-header:hover {
   -webkit-animation: vibrate-2 0.3s linear infinite both;
-  animation: vibrate-2 0.3s linear infinite both; 
+  animation: vibrate-2 0.3s linear infinite both;
 }
 header.menu .logo-header img {
   width: 9.5rem;
@@ -28,20 +28,49 @@ header.menu nav ul {
   list-style: none;
   align-items: center;
 }
-header.menu nav li a {
+header.menu nav li a,
+header.menu nav li button {
   font-family: 'crang';
   font-size: 1.5rem;
   color: #f3dfc3;
 }
-header.menu nav li a:hover {
+header.menu nav li a:hover,
+header.menu nav li button:hover {
   filter: brightness(0.95);
   transform: scale(0.97);
+  cursor: pointer;
 }
 header.menu .btn-mobile-menu {
   display: none;
 }
 header.menu .btn-play {
   margin-left: auto;
+}
+header.menu nav li.menu-subitems {
+  position: relative;
+}
+header.menu nav li.menu-subitems ul {
+  left: 0;
+  top: 2.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  background-color: #6e3c4c;
+  background-image: none;
+  gap: 0rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  transform: scale(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+header.menu nav li.menu-subitems img {
+  height: 3rem;
+}
+header.menu nav li.menu-subitems.active ul {
+  transform: scale(1);
 }
 /*end header*/
 @media (max-width: 992px) {
@@ -66,7 +95,8 @@ header.menu .btn-play {
     width: 5rem;
     height: 5rem;
   }
-  header.menu nav li a {
+  header.menu nav li a,
+  header.menu nav li button {
     text-align: center;
     color: #500600;
   }
@@ -78,7 +108,6 @@ header.menu .btn-play {
     height: 0;
     transition: 0.3s all ease-in-out;
     visibility: hidden;
-    overflow: hidden;
     z-index: 99;
     background: url('../img/scrool.svg');
     background-size: 100% 100%;
@@ -97,6 +126,17 @@ header.menu .btn-play {
 
   header.menu nav li {
     padding: 1rem 2rem;
+  }
+  header.menu nav li.menu-subitems ul {
+    left: 50%;
+    transform: scale(0) translateX(-50%);
+  }
+  header.menu nav li.menu-subitems.active ul {
+    transform: scale(1) translateX(-50%);
+    top: 4rem;
+  }
+  header.menu nav li.menu-subitems ul li {
+    padding: 0rem;
   }
   /*end header*/
 }

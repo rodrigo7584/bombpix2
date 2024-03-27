@@ -8,6 +8,14 @@ function toggleMenu() {
 btnMobile.addEventListener('click', toggleMenu)
 
 /*MENU MOBILE */
+/*MENU SUBITEM */
+const btnSubItem = document.querySelector('.menu-subitems button')
+btnSubItem.addEventListener('click', () => {
+  const btn = document.querySelector('.menu-subitems')
+  btn.classList.toggle('active')
+})
+
+/*END MENU SUBITEM */
 /*ACCORDION */
 const accordion = document.querySelectorAll('.accordion')
 
@@ -22,8 +30,7 @@ accordion.forEach(item => {
       answer.style.maxHeight = 0
       item.classList.remove('open')
     } else {
-      answer.style.maxHeight =
-        answer.querySelector('.content').scrollHeight + 'px'
+      answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
       item.classList.add('open')
     }
   })
@@ -44,9 +51,7 @@ function initModalDialog() {
 
   if (modalButtons.length) {
     modalButtons.forEach(button => {
-      const modal = document.querySelector(
-        `[data-dialog-modal="${button.dataset.buttonModal}"]`
-      )
+      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
 
       button.addEventListener('click', () => {
         modal.classList.add('fade-in')
@@ -61,9 +66,7 @@ function initModalDialog() {
         }, 1000 * 0.3)
       }
 
-      const buttonsClose = modal.querySelectorAll(
-        '[data-dialog-modal="modal-close"]'
-      )
+      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
       buttonsClose.forEach(buttonClose => {
         buttonClose.addEventListener('click', () => {
           fadeOut()
@@ -125,9 +128,7 @@ const swiperChests = new Swiper('.swiper-chests .swiper', {
 /*SWIPER */
 
 document.addEventListener('DOMContentLoaded', function () {
-  const slidesBombers = document.querySelectorAll(
-    '.swiper-bombers .swiper-slide'
-  )
+  const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
   slidesBombers.forEach(slide => {
     const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
 

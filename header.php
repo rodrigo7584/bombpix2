@@ -53,7 +53,31 @@
             <ul>
               <li><a href="index.php#hero">Início</a></li>
               <li><a href="index.php#roadmap">Roadmap</a></li>
-              <li><a href="index.php#whitepaper">Whitepaper</a></li>
+              <li class="menu-subitems">
+                <button>Whitepaper</button>
+                <ul>
+                  <li>
+                    <a href="https://bombpix.gitbook.io/bombpix" target="_blank">
+                      <img src="./img/brasil.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://bombpix.gitbook.io/bombpix-en/" target="_blank">
+                      <img src="./img/estados-unidos.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://bombpix.gitbook.io/bombpix-es/" target="_blank">
+                      <img src="./img/espanha.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://bombpix.gitbook.io/bombpix-en/" target="_blank">
+                      <img src="./img/china.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="index.php#bombers">Bombers</a></li>
               <li><a href="index.php#marketplace">Marketplace</a></li>
               <a href="https://marketplace.bombpix.net/login" class="btn btn-play">
