@@ -59,18 +59,30 @@
   border-radius: 5rem;
   padding: 1.3rem 1rem 1rem 1rem;
 }
-.marketplace .swiper-chests .swiper-conteudo h3.light-green {
-  background-color: #00b200;
-}
-.marketplace .swiper-chests .swiper-conteudo h3.green {
-  background-color: #005a1c;
-}
-.marketplace .swiper-chests .swiper-conteudo h3.blue {
-  background-color: #003bd6;
-}
-.marketplace .swiper-chests .swiper-conteudo h3.red {
-  background-color: #ff251b;
-}
+  .marketplace .swiper-chests .swiper-conteudo h3.verde-claro {
+    background-color: #2d7417;
+  }
+ .marketplace .swiper-chests .swiper-conteudo h3.vermelho {
+  background-color: #80221b;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.azul {
+    background-color: #323180;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.verde-escuro {
+    background-color: #233a15;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.marrom {
+    background-color: #7c5f49;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.roxo {
+    background-color: #5a166f;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.amarelo {
+    background-color: #9e6311;
+  }
+  .marketplace .swiper-chests .swiper-conteudo h3.rosa {
+    background-color: #59113e;
+  }
 .marketplace .swiper-chests .swiper-conteudo img {
   width: 40rem;
   position: relative;

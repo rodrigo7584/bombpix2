@@ -399,7 +399,7 @@
     <img src="./img/grass.png" alt="" class="grass" />
   </div>
   <?php 
-       $modes = [
+       $chests = [
         'ultra-comum'=>[
           'tipo'=>'ultra comum',
           'cor'=>'verde-claro',        
@@ -446,30 +446,16 @@
             </div>
             <div class="swiper">
               <div class="swiper-wrapper">
+                <?php foreach($chests as $chests){?>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
-                    <h3 class="light-green">Baú ultra comum</h3>
-                    <img src="./img/chest-4.gif" alt="">
+                    <h3 class="<?php echo $chests['cor']?>">
+                     baú <?php echo $chests['tipo']?>
+                    </h3>
+                    <img src="./img/bau-<?php echo $chests['cor']?>.gif" alt="">
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="swiper-conteudo">
-                    <h3 class="green">Baú comum</h3>
-                    <img src="./img/chest-2.gif" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-conteudo">
-                    <h3 class="blue">Baú raro</h3>
-                    <img src="./img/chest-5.gif" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-conteudo">
-                    <h3 class="red">Baú épico</h3>
-                    <img src="./img/chest-4.gif" alt="">
-                  </div>
-                </div>
+                <?php }?>
               </div>
             </div>
             <div class="button-next">
