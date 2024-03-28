@@ -421,11 +421,11 @@
           'cor'=>'marrom',        
         ],
         'mitico'=>[
-          'tipo'=>'mítco',
+          'tipo'=>'mítico',
           'cor'=>'roxo',        
         ],
         'ultra-mitico'=>[
-          'tipo'=>'ultra mitico',
+          'tipo'=>'ultra mítico',
           'cor'=>'rosa',        
         ],
         'diamante'=>[
