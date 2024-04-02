@@ -1,0 +1,85 @@
+.page-marketplace {
+  display: grid;
+  grid-template-columns: 23rem 1fr;
+}
+.page-marketplace .btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.page-marketplace .btn img {
+  max-width: 100%;
+}
+.page-marketplace aside {
+  background: #303030;
+  background-image: url('../img/earth-2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 3rem 2rem;
+}
+.page-marketplace aside .logo {
+  width: 15rem;
+}
+.page-marketplace aside .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-marketplace aside nav {
+  padding: 5rem 0;
+  font-family: 'cabinet-bold', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.page-marketplace aside nav a,
+.page-marketplace aside nav li {
+  font-family: 'cabinet-bold', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.page-marketplace aside .item {
+  display: flex;
+  gap: 1rem;
+}
+.page-marketplace aside .item-content {
+  display: grid;
+  grid-template-columns: 2rem minmax(7.1rem, 1fr) 1rem;
+  gap: 1rem;
+}
+.page-marketplace aside .item-content .icon {
+  height: 2rem;
+  margin-top: -0.5rem;
+}
+.page-marketplace aside .multi-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.page-marketplace aside .multi-items .item-content::after {
+  content: url('../img/icon-arrow.png');
+}
+.page-marketplace .data {
+  margin-bottom: 2rem;
+}
+.page-marketplace .data ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-marketplace aside .data li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #3e3e3e;
+  border-radius: 5rem;
+  padding: 1rem 1rem;
+  font-family: 'cabinet-regular', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.page-marketplace aside .data li span {
+  font-family: 'cabinet-bold', sans-serif;
+}
+.page-marketplace aside .data li .icon {
+  height: 2rem;
+}
