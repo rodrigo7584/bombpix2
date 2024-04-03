@@ -1,3 +1,9 @@
+<?php
+$lang = isset($_GET['lang']) ? $_GET['lang'] : 'pt';
+
+$translations = include 'lang/' . $lang . '.php';
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -35,7 +41,7 @@
 </head>
 
 <body>
-<div class="loader-wrapper">
-  <img src="./img/logo-loader.png" alt="" />
-  <div class="loader"></div>
-</div>
+  <div class="loader-wrapper">
+    <img src="./img/logo-loader.png" alt="" />
+    <div class="loader"></div>
+  </div>

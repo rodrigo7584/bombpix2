@@ -4,6 +4,12 @@
     <img src="./img/logo-2.png" alt="" class="logo" />
     <button class="btn-lang">
       <img src="./img/icon-globe.png" alt="" />
+      <!-- <div class="langs">
+        <a href="?lang=en">English</a>
+        <a href="?lang=pt">Português</a>
+        <a href="?lang=zh">马达林</a>
+        <a href="?lang=es">Español</a>
+      </div> -->
     </button>
     <a href="#" class="btn btn-tutorial">TUTORIAL</a>
     <nav>
@@ -102,7 +108,7 @@
     <div class="topo">
       <div class="title-marketplace">
         <h1 class="text-gradient">marketplace</h1>
-      </div> 
+      </div>
       <button class="mobile-aside">
         <img src="./img/btn-mobile.svg" alt="" class="icon-menu">
         <img src="./img/btn-close.svg" alt="" class="icon-close">
@@ -110,7 +116,15 @@
     </div>
     <h2 class="text-normal">
       O jogo explosivo que transforma suas vitórias em riquezas reais!
+      <!-- <p> <?php
+
+      foreach($translations['box'] as $item){
+        print_r($item);
+      };
+      
+      ?></p> -->
     </h2>
+
     <div class="boxes">
       <?php for ($i=0; $i < 8; $i++) { 
         ?>

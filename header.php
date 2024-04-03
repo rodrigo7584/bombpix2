@@ -1,4 +1,3 @@
-
 <section class="main-menu">
   <div class="container">
     <div class="row">
@@ -39,7 +38,7 @@
               </ul>
             </li>
             <li><a href="index.php#bombers">Bombers</a></li>
-            <li><a href="index.php#marketplace">Marketplace</a></li>
+            <li><a href="marketplace.php">Marketplace</a></li>
             <a href="https://marketplace.bombpix.net/login" class="btn btn-play">
               Jogue agora
             </a>
