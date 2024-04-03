@@ -1,45 +1,58 @@
 /*MENU MOBILE */
 const btnMobile = document.querySelector('button.btn-mobile-menu')
-function toggleMenu() {
-  const navMobile = document.querySelector('header.menu nav')
-  btnMobile.classList.toggle('active')
-  navMobile.classList.toggle('active')
+function initMenuMobile() {
+  if (btnMobile) {
+    function toggleMenu() {
+      const navMobile = document.querySelector('header.menu nav')
+      btnMobile.classList.toggle('active')
+      navMobile.classList.toggle('active')
+    }
+    btnMobile.addEventListener('click', toggleMenu)
+  }
 }
-btnMobile.addEventListener('click', toggleMenu)
+initMenuMobile()
 
 /*MENU MOBILE */
 /*MENU SUBITEM */
 const btnSubItem = document.querySelector('.menu-subitems button')
-btnSubItem.addEventListener('click', () => {
-  const btn = document.querySelector('.menu-subitems')
-  btn.classList.toggle('active')
-})
-
+function initMenuSubItems() {
+  if (btnSubItem) {
+    btnSubItem.addEventListener('click', () => {
+      const btn = document.querySelector('.menu-subitems')
+      btn.classList.toggle('active')
+    })
+  }
+}
+initMenuSubItems()
 /*END MENU SUBITEM */
 /*ACCORDION */
 const accordion = document.querySelectorAll('.accordion')
+function initAccordion() {
+  if (accordion) {
+    accordion.forEach(item => {
+      const question = item.querySelector('.question')
+      const answer = item.querySelector('.answer')
 
-accordion.forEach(item => {
-  const question = item.querySelector('.question')
-  const answer = item.querySelector('.answer')
-
-  answer.style.maxHeight = 0
-
-  question.addEventListener('click', () => {
-    if (item.classList.contains('open')) {
       answer.style.maxHeight = 0
-      item.classList.remove('open')
-    } else {
-      answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
-      item.classList.add('open')
-    }
-  })
-})
+
+      question.addEventListener('click', () => {
+        if (item.classList.contains('open')) {
+          answer.style.maxHeight = 0
+          item.classList.remove('open')
+        } else {
+          answer.style.maxHeight =
+            answer.querySelector('.content').scrollHeight + 'px'
+          item.classList.add('open')
+        }
+      })
+    })
+  }
+}
+initAccordion()
 /*END ACCORDION */
 /*LOADER */
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
-    // Quando a página estiver totalmente carregada, esconde o loader
     document.querySelector('.loader-wrapper').style.display = 'none'
   }
 }
@@ -51,7 +64,9 @@ function initModalDialog() {
 
   if (modalButtons.length) {
     modalButtons.forEach(button => {
-      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
+      const modal = document.querySelector(
+        `[data-dialog-modal="${button.dataset.buttonModal}"]`
+      )
 
       button.addEventListener('click', () => {
         modal.classList.add('fade-in')
@@ -66,7 +81,9 @@ function initModalDialog() {
         }, 1000 * 0.3)
       }
 
-      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
+      const buttonsClose = modal.querySelectorAll(
+        '[data-dialog-modal="modal-close"]'
+      )
       buttonsClose.forEach(buttonClose => {
         buttonClose.addEventListener('click', () => {
           fadeOut()
@@ -126,66 +143,89 @@ const swiperChests = new Swiper('.swiper-chests .swiper', {
 })
 
 /*SWIPER */
-
+const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
 document.addEventListener('DOMContentLoaded', function () {
-  const slidesBombers = document.querySelectorAll('.swiper-bombers .swiper-slide')
-  slidesBombers.forEach(slide => {
-    const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
+  function initSlider() {
+    if (slidesBombers.length > 0) {
+      slidesBombers.forEach(slide => {
+        const slidesTipos = slide.querySelectorAll('.swiper-conteudo')
 
-    slidesTipos.forEach((tipo, tipoIndex) => {
-      const btnNext = tipo.querySelector('.next')
-      const btnPrev = tipo.querySelector('.prev')
-      const title = tipo.querySelectorAll('h3')
-      const text = tipo.querySelectorAll('p')
-      const image = tipo.querySelectorAll('.img-bomber')
-      let currentIndex = 0
+        slidesTipos.forEach((tipo, tipoIndex) => {
+          const btnNext = tipo.querySelector('.next')
+          const btnPrev = tipo.querySelector('.prev')
+          const title = tipo.querySelectorAll('h3')
+          const text = tipo.querySelectorAll('p')
+          const image = tipo.querySelectorAll('.img-bomber')
+          let currentIndex = 0
 
-      title[0].classList.add('active')
-      text[0].classList.add('active')
-      image[0].classList.add('active')
-      btnPrev.disabled = true
-      btnNext.disabled = false
-
-      btnNext.addEventListener('click', () => {
-        console.log(currentIndex)
-        console.log(title.length)
-
-        if (currentIndex < title.length - 1) {
-          title[currentIndex].classList.remove('active')
-          text[currentIndex].classList.remove('active')
-          image[currentIndex].classList.remove('active')
-          currentIndex++
-          title[currentIndex].classList.add('active')
-          text[currentIndex].classList.add('active')
-          image[currentIndex].classList.add('active')
-          btnPrev.disabled = false
-
-          if (currentIndex === title.length - 1) {
-            btnNext.disabled = true
-          }
-        }
-      })
-      btnPrev.addEventListener('click', () => {
-        console.log(currentIndex)
-        console.log(title.length)
-
-        if (currentIndex > 0) {
-          title[currentIndex].classList.remove('active')
-          text[currentIndex].classList.remove('active')
-          image[currentIndex].classList.remove('active')
-          currentIndex--
-          title[currentIndex].classList.add('active')
-          text[currentIndex].classList.add('active')
-          image[currentIndex].classList.add('active')
+          title[0].classList.add('active')
+          text[0].classList.add('active')
+          image[0].classList.add('active')
+          btnPrev.disabled = true
           btnNext.disabled = false
 
-          if (currentIndex === 0) {
-            btnPrev.disabled = true
-          }
-        }
+          btnNext.addEventListener('click', () => {
+            console.log(currentIndex)
+            console.log(title.length)
+
+            if (currentIndex < title.length - 1) {
+              title[currentIndex].classList.remove('active')
+              text[currentIndex].classList.remove('active')
+              image[currentIndex].classList.remove('active')
+              currentIndex++
+              title[currentIndex].classList.add('active')
+              text[currentIndex].classList.add('active')
+              image[currentIndex].classList.add('active')
+              btnPrev.disabled = false
+
+              if (currentIndex === title.length - 1) {
+                btnNext.disabled = true
+              }
+            }
+          })
+          btnPrev.addEventListener('click', () => {
+            console.log(currentIndex)
+            console.log(title.length)
+
+            if (currentIndex > 0) {
+              title[currentIndex].classList.remove('active')
+              text[currentIndex].classList.remove('active')
+              image[currentIndex].classList.remove('active')
+              currentIndex--
+              title[currentIndex].classList.add('active')
+              text[currentIndex].classList.add('active')
+              image[currentIndex].classList.add('active')
+              btnNext.disabled = false
+
+              if (currentIndex === 0) {
+                btnPrev.disabled = true
+              }
+            }
+          })
+        })
       })
-    })
-  })
+    }
+  }
+  initSlider()
 })
+
+const btnMobileAside = document.querySelector('button.mobile-aside')
+
+function initMenuAsideMarketPlace() {
+  if (btnMobileAside) {
+    const asideMenu = document.querySelector('.menu-marketplace')
+
+    btnMobileAside.addEventListener('click', () => {
+      if (btnMobileAside.classList.contains('active')) {
+        btnMobileAside.classList.remove('active')
+        asideMenu.classList.remove('active')
+      } else {
+        btnMobileAside.classList.add('active')
+        asideMenu.classList.add('active')
+      }
+    })
+  }
+}
+initMenuAsideMarketPlace()
 
 AOS.init()

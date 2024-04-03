@@ -6,67 +6,89 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  font-family: 'cabinet-bold';
+  height: auto;
+  width: auto;
+  padding: 0.7rem 1rem;
 }
 .page-marketplace .btn img {
   max-width: 100%;
 }
-.page-marketplace aside {
+
+.menu-marketplace {
   background: #303030;
   background-image: url('../img/earth-2.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  background-blend-mode: luminosity;
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.page-marketplace aside .logo {
+.menu-marketplace .logo {
   width: 15rem;
+  margin: 0 auto;
 }
-.page-marketplace aside .menu-list {
+.menu-marketplace .btn-lang{
+  margin: 1rem 0;
+}
+.menu-marketplace .btn-lang:hover{
+  cursor: pointer;
+}
+.menu-marketplace .btn-lang img{
+  width: 5rem;
+}
+.menu-marketplace .btn-tutorial{
+  margin:  0 auto;
+  padding: 0.7rem 3rem;
+}
+.menu-marketplace .menu-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.page-marketplace aside nav {
+.menu-marketplace nav {
   padding: 5rem 0;
   font-family: 'cabinet-bold', sans-serif;
   color: #fff;
   font-size: 1.3rem;
 }
-.page-marketplace aside nav a,
-.page-marketplace aside nav li {
+.menu-marketplace nav a,
+.menu-marketplace nav li {
   font-family: 'cabinet-bold', sans-serif;
   color: #fff;
   font-size: 1.3rem;
 }
-.page-marketplace aside .item {
+.menu-marketplace .item {
   display: flex;
   gap: 1rem;
 }
-.page-marketplace aside .item-content {
+.menu-marketplace .item-content {
   display: grid;
   grid-template-columns: 2rem minmax(7.1rem, 1fr) 1rem;
   gap: 1rem;
 }
-.page-marketplace aside .item-content .icon {
+.menu-marketplace .item-content .icon {
   height: 2rem;
   margin-top: -0.5rem;
 }
-.page-marketplace aside .multi-item-list {
+.menu-marketplace .multi-item-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.page-marketplace aside .multi-items .item-content::after {
+.menu-marketplace .multi-items .item-content::after {
   content: url('../img/icon-arrow.png');
 }
-.page-marketplace .data {
+.menu-marketplace  .data {
   margin-bottom: 2rem;
 }
-.page-marketplace .data ul {
+.menu-marketplace  .data ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.page-marketplace aside .data li {
+.menu-marketplace .data li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -77,9 +99,197 @@
   color: #fff;
   font-size: 1.3rem;
 }
-.page-marketplace aside .data li span {
+.menu-marketplace .data li span {
   font-family: 'cabinet-bold', sans-serif;
 }
-.page-marketplace aside .data li .icon {
+.menu-marketplace .data li .icon {
   height: 2rem;
+}
+
+
+
+.main-marketplace{
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0rem 1rem 10rem 1rem;
+  background: linear-gradient(180deg,#3086ff,#cbe1ff);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main-marketplace .bg-element{
+  position: absolute;
+  z-index: 2;
+}
+.main-marketplace .floor {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.main-marketplace .cloud-1 {
+  width: 8rem;
+  top: 3%;
+  left: 1%;
+  animation: floating 3s linear infinite;
+}
+.main-marketplace .cloud-2 {
+  width: 9rem;
+  top: 8%;
+  left: 5%;
+  animation: floating 4s linear infinite;
+}
+.main-marketplace .cloud-3 {
+  width: 4rem;
+  top: 10%;
+  left: 78%;
+  animation: floating 4s linear infinite;
+}
+.main-marketplace .topo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+.page-marketplace .mobile-aside {
+  position: absolute;
+  width: 6rem;
+  height: 5rem;
+  right: 0;
+  bottom: 4rem;
+  display: none;
+}
+.page-marketplace .mobile-aside img{
+  width: 100%;
+}
+.page-marketplace .mobile-aside .icon-menu{
+  display: flex;
+}
+.page-marketplace .mobile-aside .icon-close{
+  display: none;
+}
+.page-marketplace .mobile-aside.active .icon-menu{
+  display: none;
+}
+.page-marketplace .mobile-aside.active .icon-close{
+  display: flex;
+}
+.main-marketplace .title-marketplace{
+  background-image: url(../img/title-wood.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 55rem;
+    height: 15rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+.main-marketplace .title-marketplace h1{
+  font-size: 4.5rem;
+}
+.main-marketplace h2 {
+  width: 40rem;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 5;
+}
+.main-marketplace .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 5;
+}
+.main-marketplace .box{
+  width: 25rem;
+  background: #303030;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.main-marketplace .box .image{
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #222322;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow:hidden;
+  width: 100%;
+  height: 25rem;
+}
+.main-marketplace .box .image img{
+  width: 45rem;
+  position: absolute;
+  left: calc(50% - 22.25rem);
+  top: -8rem;
+}
+.main-marketplace .box .content{
+  padding: 2rem 1rem;
+}
+.main-marketplace .box .content h3{
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.main-marketplace .box .content h4{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.main-marketplace .box .details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.main-marketplace .box .details .value .text-normal{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.main-marketplace .box .details .value .text-value {
+  color: #eb8d06; 
+  font-size: 1.5rem;
+  font-family: 'cabinet-bold',sans-serif;
+  text-transform: uppercase;
+}
+.main-marketplace .box .details .value .text-value span{
+  font-size: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  .page-marketplace{
+    grid-template-columns: 100%;
+    position: relative;
+  }
+  .menu-marketplace{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 20;
+  }
+  .page-marketplace .mobile-aside {
+    display: flex;
+  }
+  .main-marketplace .topo {
+    padding: 0 6rem;
+  }
+  .menu-marketplace{
+    transition: 0.3s;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .menu-marketplace.active{
+    transform: scaleX(1);
+  }
 }

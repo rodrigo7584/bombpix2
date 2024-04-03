@@ -2,12 +2,16 @@
 <div class="page-marketplace">
   <aside class="menu-marketplace">
     <img src="./img/logo-2.png" alt="" class="logo" />
+    <button class="btn-lang">
+      <img src="./img/icon-globe.png" alt="" />
+    </button>
+    <a href="#" class="btn btn-tutorial">TUTORIAL</a>
     <nav>
       <ul class="menu-list">
         <li class="item multi-items">
           <div class="item-content">
             <img src="./img/icon-house.png" alt="" class="icon" />
-            loja
+            Loja
           </div>
           <ul class="multi-item-list">
             <li>
@@ -91,26 +95,32 @@
     </a>
   </aside>
   <main class="main-marketplace">
+    <img src="./img/floor.png" alt="" class="floor bg-element">
+    <img src="./img/cloud.png" class="cloud-1 bg-element" alt="" />
+    <img src="./img/cloud.png" class="cloud-2 bg-element" alt="" />
+    <img src="./img/cloud.png" class="cloud-3 bg-element" alt="" />
     <div class="topo">
-      <button>
-        <img src="./img/icon-globe.png" alt="" />
-      </button>
       <div class="title-marketplace">
         <h1 class="text-gradient">marketplace</h1>
-      </div>
-      <a href="#" class="btn">TUTORIAL</a>
+      </div> 
+      <button class="mobile-aside">
+        <img src="./img/btn-mobile.svg" alt="" class="icon-menu">
+        <img src="./img/btn-close.svg" alt="" class="icon-close">
+      </button>
     </div>
     <h2 class="text-normal">
       O jogo explosivo que transforma suas vitórias em riquezas reais!
     </h2>
     <div class="boxes">
+      <?php for ($i=0; $i < 8; $i++) { 
+        ?>
       <div class="box">
         <div class="image">
           <img src="./img/bau-azul.gif" alt="" />
         </div>
         <div class="content">
-          <h3 class="text-normal">Baú ultra normal</h3>
-          <p>rendimento até 30%</p>
+          <h3 class="text-bold">Baú ultra normal</h3>
+          <h4 class="text-normal">Rendimento até 30%</h4>
           <div class="details">
             <div class="value">
               <p class="text-normal">Valor</p>
@@ -123,6 +133,7 @@
           </div>
         </div>
       </div>
+      <?php  }?>
     </div>
   </main>
 </div>
