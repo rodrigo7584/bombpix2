@@ -4,30 +4,38 @@
     <img src="./img/logo-2.png" alt="" class="logo" />
     <button class="btn-lang">
       <img src="./img/icon-globe.png" alt="" />
-      <!-- <div class="langs">
+      <div class="langs">
         <a href="?lang=en">English</a>
         <a href="?lang=pt">Português</a>
         <a href="?lang=zh">马达林</a>
         <a href="?lang=es">Español</a>
-      </div> -->
+      </div>
     </button>
-    <a href="#" class="btn btn-tutorial">TUTORIAL</a>
+    <a href="#" class="btn btn-tutorial">
+      <?php echo isset($translations['marketplace']['btn_tutorial']) ? $translations['marketplace']['btn_tutorial'] : '404' ?>
+    </a>
     <nav>
       <ul class="menu-list">
         <li class="item multi-items">
           <div class="item-content">
             <img src="./img/icon-house.png" alt="" class="icon" />
-            Loja
+            <?php echo isset($translations['marketplace']['menu_item1']) ? $translations['marketplace']['menu_item1'] : '404' ?>
           </div>
           <ul class="multi-item-list">
             <li>
-              <a href="#">Farm</a>
+              <a href="#">
+                <?php echo isset($translations['marketplace']['menu_item1_subitem1']) ? $translations['marketplace']['menu_item1_subitem1'] : '404' ?>
+              </a>
             </li>
             <li>
-              <a href="#">PvP</a>
+              <a href="#">
+                <?php echo isset($translations['marketplace']['menu_item1_subitem2']) ? $translations['marketplace']['menu_item1_subitem2'] : '404' ?>
+              </a>
             </li>
             <li>
-              <a href="#">Aventura</a>
+              <a href="#">
+                <?php echo isset($translations['marketplace']['menu_item1_subitem3']) ? $translations['marketplace']['menu_item1_subitem3'] : '404' ?>
+              </a>
             </li>
         </li>
       </ul>
@@ -35,50 +43,64 @@
       <li class="item multi-items">
         <div class="item-content">
           <img src="./img/icon-control.png" alt="" class="icon" />
-          Jogar agora
+          <?php echo isset($translations['marketplace']['menu_item2']) ? $translations['marketplace']['menu_item2'] : '404' ?>
         </div>
         <ul class="multi-item-list">
           <li>
-            <a href="#">Farm</a>
+            <a href="#">
+              <?php echo isset($translations['marketplace']['menu_item2_subitem1']) ? $translations['marketplace']['menu_item2_subitem1'] : '404' ?>
+            </a>
           </li>
           <li>
-            <a href="#">PvP</a>
+            <a href="#">
+              <?php echo isset($translations['marketplace']['menu_item2_subitem2']) ? $translations['marketplace']['menu_item2_subitem2'] : '404' ?>
+            </a>
           </li>
           <li>
-            <a href="#">Aventura</a>
+            <a href="#">
+              <?php echo isset($translations['marketplace']['menu_item2_subitem3']) ? $translations['marketplace']['menu_item2_subitem3'] : '404' ?>
+            </a>
           </li>
         </ul>
       </li>
       <li class="item">
         <a href="#" class="item-content">
           <img src="./img/icon-user.png" alt="" class="icon" />
-          Minha conta
+          <?php echo isset($translations['marketplace']['menu_item3']) ? $translations['marketplace']['menu_item3'] : '404' ?>
         </a>
       </li>
       <li class="item multi-items">
         <div class="item-content">
           <img src="./img/icon-paper.png" alt="" class="icon" />
-          Whitepaper
+          <?php echo isset($translations['marketplace']['menu_item4']) ? $translations['marketplace']['menu_item4'] : '404' ?>
         </div>
         <ul class="multi-item-list">
           <li>
-            <a href="#">Pt</a>
+            <a href="https://bombpix.gitbook.io/bombpix" target="_blank">
+              <?php echo isset($translations['marketplace']['menu_item4_subitem1']) ? $translations['marketplace']['menu_item4_subitem1'] : '404' ?>
+            </a>
           </li>
           <li>
-            <a href="#">En</a>
+            <a href="https://bombpix.gitbook.io/bombpix-en/" target="_blank">
+              <?php echo isset($translations['marketplace']['menu_item4_subitem2']) ? $translations['marketplace']['menu_item4_subitem2'] : '404' ?>
+            </a>
           </li>
           <li>
-            <a href="#">Es</a>
+            <a href="https://bombpix.gitbook.io/bombpix-es/" target="_blank">
+              <?php echo isset($translations['marketplace']['menu_item4_subitem3']) ? $translations['marketplace']['menu_item4_subitem3'] : '404' ?>
+            </a>
           </li>
           <li>
-            <a href="#">Ch</a>
+            <a href="https://bombpix.gitbook.io/bombpix-ch/" target="_blank">
+              <?php echo isset($translations['marketplace']['menu_item4_subitem4']) ? $translations['marketplace']['menu_item4_subitem4'] : '404' ?>
+            </a>
           </li>
         </ul>
       </li>
       <li class="item">
         <a href="#" class="item-content">
           <img src="./img/icon-box.png" alt="" class="icon" />
-          Lands
+          <?php echo isset($translations['marketplace']['menu_item5']) ? $translations['marketplace']['menu_item5'] : '404' ?>
         </a>
       </li>
       </ul>
@@ -87,17 +109,27 @@
       <ul>
         <li>
           <img src="./img/icon-user-2.png" alt="" class="icon" />
-          <p><span>Amigos: </span>83</p>
+          <p>
+            <span>
+              <?php echo isset($translations['marketplace']['data_item1']) ? $translations['marketplace']['data_item1'] : '404' ?>
+            </span>
+            83
+          </p>
         </li>
         <li>
           <img src="./img/icon-coins.png" alt="" class="icon" />
-          <p><span>Saldo: </span>0000,00</p>
+          <p>
+            <span>
+              <?php echo isset($translations['marketplace']['data_item2']) ? $translations['marketplace']['data_item2'] : '404' ?>
+            </span>
+            0000,00
+          </p>
         </li>
       </ul>
     </div>
     <a href="#" class="btn">
       <img src="./img/icon-wallet.png" alt="" />
-      DEPOSITAR
+      <?php echo isset($translations['marketplace']['btn_deposit']) ? $translations['marketplace']['btn_deposit'] : '404' ?>
     </a>
   </aside>
   <main class="main-marketplace">
@@ -107,7 +139,9 @@
     <img src="./img/cloud.png" class="cloud-3 bg-element" alt="" />
     <div class="topo">
       <div class="title-marketplace">
-        <h1 class="text-gradient">marketplace</h1>
+        <h1 class="text-gradient">
+          <?php echo isset($translations['marketplace']['page_title']) ? $translations['marketplace']['page_title'] : '404' ?>
+        </h1>
       </div>
       <button class="mobile-aside">
         <img src="./img/btn-mobile.svg" alt="" class="icon-menu">
@@ -115,34 +149,42 @@
       </button>
     </div>
     <h2 class="text-normal">
-      O jogo explosivo que transforma suas vitórias em riquezas reais!
-      <!-- <p> <?php
-
-      foreach($translations['box'] as $item){
-        print_r($item);
-      };
-      
-      ?></p> -->
+      <?php echo isset($translations['marketplace']['page_subtitle']) ? $translations['marketplace']['page_subtitle'] : '404' ?>
     </h2>
-
     <div class="boxes">
-      <?php for ($i=0; $i < 8; $i++) { 
+      <?php foreach($translations['marketplace']['products'] as $product){ 
         ?>
       <div class="box">
         <div class="image">
-          <img src="./img/bau-azul.gif" alt="" />
+          <?php 
+          echo isset($product['image']) 
+          ? '<img src="./img/' . $product['image'] . '.gif" alt="" />' 
+          : '404'
+          ?>
+
         </div>
         <div class="content">
-          <h3 class="text-bold">Baú ultra normal</h3>
-          <h4 class="text-normal">Rendimento até 30%</h4>
+          <h3 class="text-bold">
+            <?php echo isset($product['name']) ? $product['name'] : '404' ?>
+          </h3>
+          <h4 class="text-normal">
+            <?php echo isset($product['description']) ? $product['description'] : '404' ?>
+          </h4>
           <div class="details">
             <div class="value">
-              <p class="text-normal">Valor</p>
-              <p class="text-value"><span>10</span> usdt</p>
+              <p class="text-normal">
+                Valor
+              </p>
+              <p class="text-value">
+                <span>
+                  <?php echo isset($product['value']) ? $product['value'] : '404' ?>
+                </span>
+                usdt
+              </p>
             </div>
             <a href="#" class="btn">
               <img src="./img/icon-chart.png" alt="" class="icon" />
-              COMPRAR
+              <?php echo isset($translations['marketplace']['btn_buy']) ? $translations['marketplace']['btn_buy'] : '404' ?>
             </a>
           </div>
         </div>

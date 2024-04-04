@@ -40,8 +40,7 @@ function initAccordion() {
           answer.style.maxHeight = 0
           item.classList.remove('open')
         } else {
-          answer.style.maxHeight =
-            answer.querySelector('.content').scrollHeight + 'px'
+          answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
           item.classList.add('open')
         }
       })
@@ -64,9 +63,7 @@ function initModalDialog() {
 
   if (modalButtons.length) {
     modalButtons.forEach(button => {
-      const modal = document.querySelector(
-        `[data-dialog-modal="${button.dataset.buttonModal}"]`
-      )
+      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
 
       button.addEventListener('click', () => {
         modal.classList.add('fade-in')
@@ -81,9 +78,7 @@ function initModalDialog() {
         }, 1000 * 0.3)
       }
 
-      const buttonsClose = modal.querySelectorAll(
-        '[data-dialog-modal="modal-close"]'
-      )
+      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
       buttonsClose.forEach(buttonClose => {
         buttonClose.addEventListener('click', () => {
           fadeOut()
@@ -227,5 +222,30 @@ function initMenuAsideMarketPlace() {
   }
 }
 initMenuAsideMarketPlace()
+
+const btnMenuAsideMultiItems = document.querySelectorAll('.multi-item-list')
+
+function initMenuAsideMultiItems() {
+  if (btnMenuAsideMultiItems.length > 0) {
+    btnMenuAsideMultiItems.forEach(btn => {
+      console.log(btn.parentNode)
+      btn.parentNode.addEventListener('click', () => {
+        btn.classList.toggle('active')
+      })
+    })
+  }
+}
+initMenuAsideMultiItems()
+
+const bntLang = document.querySelector('.btn-lang')
+
+function initBntLang() {
+  if (bntLang) {
+    bntLang.addEventListener('click', () => {
+      bntLang.classList.toggle('active')
+    })
+  }
+}
+initBntLang()
 
 AOS.init()

@@ -31,6 +31,28 @@
 }
 .menu-marketplace .btn-lang {
   margin: 1rem 0;
+  position: relative;
+}
+.menu-marketplace .btn-lang .langs {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background: #f6b005;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #000;
+  z-index: 30;
+  transform-origin: top;
+  transform: translateX(-50%) scaleY(0);
+  transition: 0.31s ease;
+}
+.menu-marketplace .btn-lang.active .langs {
+  transform: translateX(-50%) scaleY(1);
+}
+.menu-marketplace .btn-lang .langs a {
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: 'cabinet-bold', sans-serif;
 }
 .menu-marketplace .btn-lang:hover {
   cursor: pointer;
@@ -68,14 +90,25 @@
   grid-template-columns: 2rem minmax(7.1rem, 1fr) 1rem;
   gap: 1rem;
 }
+.menu-marketplace .item-content:hover {
+  cursor: pointer;
+}
 .menu-marketplace .item-content .icon {
   height: 2rem;
   margin-top: -0.5rem;
 }
 .menu-marketplace .multi-item-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5rem;
+  /* transform: scaleY(0);
+  transition: 0.2s;
+  transform-origin: left top; */
+}
+
+.menu-marketplace .multi-item-list.active {
+  display: flex;
+  /* transform: scaleY(1); */
 }
 .menu-marketplace .multi-items .item-content::after {
   content: url('../img/icon-arrow.png');
