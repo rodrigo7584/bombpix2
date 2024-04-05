@@ -22,7 +22,7 @@
           <h2 class="text-normal">
             O jogo explosivo que transforma suas vitórias em riquezas reais!
           </h2>
-          <a href="#" class="btn-play">
+          <a href="https://marketplace.bombpix.net/login" class="btn-play">
             <img src="./img/btn-play.svg" alt="" />
           </a>
         </div>
@@ -43,7 +43,8 @@
             <h2 class="text-gradient" data-texto="Bombcoins?">
               bombcoins?
             </h2>
-            <button href="#" class="btn" data-button-modal="modal-char-where">ver todos</button>
+            <button href="https://marketplace.bombpix.net/" class="btn" data-button-modal="modal-char-where">ver
+              todos</button>
             <dialog class="dialog-modal" data-dialog-modal="modal-char-where">
               <div class="dialog-content">
                 <div class="main-title">
@@ -271,7 +272,7 @@
             acúmulo de riquezas ao adicionar mais personagens ao campo de batalha.
             </li>
             <li>
-            Recolha recompensas após o farm (1 hora) e desbloqueie um novo mapa, podendo 
+            Recolha recompensas após o farm (11 hora) e desbloqueie um novo mapa, podendo 
             explodir até 2 mapas diariamente (intervalo de 11 horas).
             </li>',
         ],
@@ -463,7 +464,7 @@
               <img src="./img/btn-arrow.svg" alt="" />
             </div>
           </div>
-          <a href="#" class="btn">
+          <a href="https://marketplace.bombpix.net/" class="btn">
             ver todos
           </a>
         </div>
@@ -534,7 +535,7 @@
           personagens ao campo de batalha e aumente o acúmulo de riquezas.<br>
           - Recolha suas recompensas ao final do farm e libere um novo mapa, podendo explodir até
           2 mapas por dia.<br><br>
-          O farm leva o tempo de 1 hora e seu intervalo para início de um novo mapa é de 11 horas. 
+          O farm leva o tempo de 11 hora e seu intervalo para início de um novo mapa é de 11 horas. 
           Lembre-se sempre de que é necessário recolher seus ganhos antes de iniciar um novo mapa.
           <br><br>
           Modo de jogo PVP: "Explosão Royale" - Sobreviva e prospere na arena explosiva! (EM

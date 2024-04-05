@@ -39,8 +39,9 @@
             </li>
             <li><a href="index.php#bombers">Bombers</a></li>
             <li><a href="marketplace.php">Marketplace</a></li>
+            <li><a href="https://marketplace.bombpix.net/register">Cadastro</a></li>
             <a href="https://marketplace.bombpix.net/login" class="btn btn-play">
-              Jogue agora
+              Jogar
             </a>
           </ul>
         </nav>

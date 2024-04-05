@@ -15,7 +15,7 @@
             <li><a href="index.php#bombers">Bombers</a></li>
             <li><a href="index.php#marketplace">Marketplace</a></li>
             <li><a target="_blank" href="https://api.whatsapp.com/send?phone=11956864044">Suporte</a></li>
-            <li><a href="#">Apresentação de negócio</a></li>
+            <li><a target="_blank" href="/doc/bombpix-pt.pdf">Apresentação de negócio</a></li>
             <li><a href="#">Termos e condições</a></li>
           </ul>
         </nav>

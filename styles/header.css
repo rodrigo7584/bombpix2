@@ -73,6 +73,11 @@ header.menu nav li.menu-subitems.active ul {
   transform: scale(1);
 }
 /*end header*/
+@media (max-width: 1200px) {
+  header.menu nav ul {
+    gap: 1rem;
+  }
+}
 @media (max-width: 992px) {
   /*header*/
   .main-menu {
