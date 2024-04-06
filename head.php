@@ -12,7 +12,9 @@ $translations = include 'lang/' . $lang . '.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
-  <title>BOMB PIX - Detone. enriqueça. domine.</title>
+  <title>
+    <?php echo isset($translations['header']['page-title']) ? $translations['header']['page-title'] : '404' ?>
+  </title>
   <meta name="title" content="BOMB PIX - Detone. enriqueça. domine. " />
   <meta name="description" content="O jogo explosivo que transforma suas vitórias em riquezas reais!" />
 
