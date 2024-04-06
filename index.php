@@ -272,7 +272,7 @@
             acúmulo de riquezas ao adicionar mais personagens ao campo de batalha.
             </li>
             <li>
-            Recolha recompensas após o farm (11 hora) e desbloqueie um novo mapa, podendo 
+            Recolha recompensas após o farm (1 hora) e desbloqueie um novo mapa, podendo 
             explodir até 2 mapas diariamente (intervalo de 11 horas).
             </li>',
         ],
@@ -535,7 +535,7 @@
           personagens ao campo de batalha e aumente o acúmulo de riquezas.<br>
           - Recolha suas recompensas ao final do farm e libere um novo mapa, podendo explodir até
           2 mapas por dia.<br><br>
-          O farm leva o tempo de 11 hora e seu intervalo para início de um novo mapa é de 11 horas. 
+          O farm leva o tempo de 1 hora e seu intervalo para início de um novo mapa é de 11 horas. 
           Lembre-se sempre de que é necessário recolher seus ganhos antes de iniciar um novo mapa.
           <br><br>
           Modo de jogo PVP: "Explosão Royale" - Sobreviva e prospere na arena explosiva! (EM
@@ -625,7 +625,7 @@
           Venda ou troque no marketplace: se seu time estiver lotado, venda ou troque os bonecos
           excedentes no marketplace. Isso não apenas otimiza sua estratégia, mas também oferece
           oportunidades de lucro para você e para outros jogadores.<br><br>
-          Quebre blocos estrategicamente: a cada 6 horas, duas vezes ao dia, inicie o modo farm e
+          Quebre blocos estrategicamente: a cada 11 horas, duas vezes ao dia, inicie o modo farm e
           veja seus personagens em ação. Estrategicamente, quebre os blocos para acumular
           ganhos e fortuna.<br><br>
           Recolha os ganhos e reinicie: ao final do farm, entre no jogo, recolha seus ganhos e

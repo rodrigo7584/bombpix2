@@ -43,9 +43,7 @@ header.menu nav li button:hover {
 header.menu .btn-mobile-menu {
   display: none;
 }
-header.menu .btn-play {
-  margin-left: auto;
-}
+
 header.menu nav li.menu-subitems {
   position: relative;
 }
@@ -72,10 +70,15 @@ header.menu nav li.menu-subitems img {
 header.menu nav li.menu-subitems.active ul {
   transform: scale(1);
 }
+
 /*end header*/
 @media (max-width: 1200px) {
   header.menu nav ul {
     gap: 1rem;
+  }
+  header.menu .btn-play {
+    height: 3.5rem;
+    width: 16rem;
   }
 }
 @media (max-width: 992px) {
@@ -142,6 +145,9 @@ header.menu nav li.menu-subitems.active ul {
   }
   header.menu nav li.menu-subitems ul li {
     padding: 0rem;
+  }
+  header.menu .btn-play {
+    margin-bottom: 1rem;
   }
   /*end header*/
 }
