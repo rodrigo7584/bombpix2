@@ -9,24 +9,60 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.php#hero">Início</a></li>
-            <li><a href="index.php#roadmap">Roadmap</a></li>
-            <li><a href="index.php#whitepaper">Whitepaper</a></li>
-            <li><a href="index.php#bombers">Bombers</a></li>
-            <li><a href="index.php#marketplace">Marketplace</a></li>
-            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=11956864044">Suporte</a></li>
-            <li><a target="_blank" href="/doc/bombpix-pt.pdf">Apresentação de negócio</a></li>
-            <li><a href="#">Termos e condições</a></li>
+            <li>
+              <a href="index.php#hero">
+                <?php echo isset($translations['footer']['menu_item1']) ? $translations['footer']['menu_item1'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a href="index.php#roadmap">
+                <?php echo isset($translations['footer']['menu_item2']) ? $translations['footer']['menu_item2'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a href="index.php#whitepaper">
+                <?php echo isset($translations['footer']['menu_item3']) ? $translations['footer']['menu_item3'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a href="index.php#bombers">
+                <?php echo isset($translations['footer']['menu_item4']) ? $translations['footer']['menu_item4'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a href="index.php#marketplace">
+                <?php echo isset($translations['footer']['menu_item5']) ? $translations['footer']['menu_item5'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=11956864044">
+                <?php echo isset($translations['footer']['menu_item6']) ? $translations['footer']['menu_item6'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="./doc/bombpix-pt.pdf">
+                <?php echo isset($translations['footer']['menu_item7']) ? $translations['footer']['menu_item7'] : '404' ?>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <?php echo isset($translations['footer']['menu_item8']) ? $translations['footer']['menu_item8'] : '404' ?>
+              </a>
+            </li>
           </ul>
         </nav>
         <form action="#">
-          <h2>Contact us</h2>
+          <h2>
+            <?php echo isset($translations['footer']['form_contact_title']) ? $translations['footer']['form_contact_title'] : '404' ?>
+          </h2>
           <div class="form-row">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="<?php echo isset($translations['footer']['form_contact_input_name']) ? $translations['footer']['form_contact_input_name'] : '404' ?>" />
+            <input type="email" placeholder="<?php echo isset($translations['footer']['form_contact_input_email']) ? $translations['footer']['form_contact_input_email'] : '404' ?>" />
           </div>
-          <textarea placeholder="Message..."></textarea>
-          <button class="btn" type="submit">Enviar</button>
+          <textarea placeholder="<?php echo isset($translations['footer']['form_contact_input_message']) ? $translations['footer']['form_contact_input_message'] : '404' ?>"></textarea>
+          <button class="btn" type="submit">
+            <?php echo isset($translations['footer']['form_contact_button']) ? $translations['footer']['form_contact_button'] : '404' ?>
+          </button>
         </form>
       </div>
     </div>
