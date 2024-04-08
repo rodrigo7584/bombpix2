@@ -14,6 +14,9 @@
     <a href="#" class="btn btn-tutorial">
       <?php echo isset($translations['marketplace']['btn_tutorial']) ? $translations['marketplace']['btn_tutorial'] : '404' ?>
     </a>
+    <a href="#" class="btn btn-login">
+      <?php echo isset($translations['marketplace']['btn_login']) ? $translations['marketplace']['btn_login'] : '404' ?>
+    </a>
     <nav>
       <ul class="menu-list">
         <li class="item multi-items">

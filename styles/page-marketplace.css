@@ -60,8 +60,9 @@
 .menu-marketplace .btn-lang img {
   width: 5rem;
 }
-.menu-marketplace .btn-tutorial {
-  margin: 0 auto;
+.menu-marketplace .btn-tutorial,
+.menu-marketplace .btn-login {
+  margin: 0.5rem auto;
   padding: 0.7rem 3rem;
 }
 .menu-marketplace .menu-list {

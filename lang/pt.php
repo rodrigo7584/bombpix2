@@ -466,7 +466,8 @@
     'page_title'=>'marketplace',
     'page_subtitle'=>'O jogo explosivo que transforma suas vitórias em riquezas reais!',
     'product_info_value'=>'Valor',
-    'btn_buy'=>'COMPRA',
+    'btn_buy'=>'COMPRAR',
+    'btn_login'=>'LOGIN',
     'products'=>[
       'type1'=>[
         'name'=>'BAÚ ULTRA COMUM',
