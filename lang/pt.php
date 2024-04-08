@@ -443,6 +443,21 @@
       ],
     ],
   ],
+  'footer'=>[
+    'menu_item1'=>'Início',
+    'menu_item2'=>'Roadmap',
+    'menu_item3'=>'Whitepaper',
+    'menu_item4'=>'Bombers',
+    'menu_item5'=>'Marketplace',
+    'menu_item6'=>'Suporte',
+    'menu_item7'=>'Apresentação de negócio',
+    'menu_item8'=>'Termos e condições',
+    'form_contact_title'=>'Contact us',
+    'form_contact_input_name'=>'Name',
+    'form_contact_input_email'=>'Email',
+    'form_contact_input_message'=>'Messagem...',
+    'form_contact_button'=>'ENVIAR'
+  ],
   'marketplace' => [
     'btn_tutorial'=>'TUTORIAL',
     'menu_item1'=>'Loja',
